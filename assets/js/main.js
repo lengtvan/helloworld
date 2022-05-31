@@ -121,23 +121,23 @@ document.addEventListener("DOMContentLoaded", () => {
     const theme = document.getElementsByTagName("link")[11];
     switch (id) {
       case "typography1":
-        theme.href = "assets/css/typography1.css";
+        theme.href = "assets/css/Medieval.css";
         console.log("haha");
         break;
       case "typography2":
-        theme.href = "assets/css/typography2.css";
+        theme.href = "assets/css/19thCentury.css";
         break;
       case "typography3":
-        theme.href = "assets/css/typography3.css";
+        theme.href = "assets/css/Firsthalf20th.css";
         break;
       case "typography4":
-        theme.href = "assets/css/typography4.css";
+        theme.href = "assets/css/Secondhalf20th.css";
         break;
       case "typography5":
-        theme.href = "assets/css/typography5.css";
+        theme.href = "assets/css/Late20th.css";
         break;
       case "typography6":
-        theme.href = "assets/css/typography6.css";
+        theme.href = "assets/css/2030.css";
         break;
     }
   }
