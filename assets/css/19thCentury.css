@@ -900,5 +900,5 @@ img {
   
 }
 
-.grayscale {filter: grayscale(100%);}
+.sepia {filter: sepia(100%);}
 
