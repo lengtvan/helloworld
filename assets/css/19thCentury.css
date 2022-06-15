@@ -900,5 +900,6 @@ img {
   
 }
 
-.sepia {filter: sepia(100%);}
-
+.sepia {
+  filter: sepia(100%);
+}
