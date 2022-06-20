@@ -1,9 +1,3 @@
-/**
- * Template Name: ZenBlog - v1.0.0
- * Template URL: https://bootstrapmade.com/zenblog-bootstrap-blog-template/
- * Author: BootstrapMade.com
- * License: https:///bootstrapmade.com/license/
- */
 document.addEventListener("DOMContentLoaded", () => {
   "use strict";
 
@@ -23,20 +17,20 @@ document.addEventListener("DOMContentLoaded", () => {
    * Mobile nav toggle
    */
 
-  const mobileNavToogleButton = document.querySelector(".mobile-nav-toggle");
+  // const mobileNavToogleButton = document.querySelector(".mobile-nav-toggle");
 
-  if (mobileNavToogleButton) {
-    mobileNavToogleButton.addEventListener("click", function (event) {
-      event.preventDefault();
-      mobileNavToogle();
-    });
-  }
+  // if (mobileNavToogleButton) {
+  //   mobileNavToogleButton.addEventListener("click", function (event) {
+  //     event.preventDefault();
+  //     mobileNavToogle();
+  //   });
+  // }
 
-  function mobileNavToogle() {
-    document.querySelector("body").classList.toggle("mobile-nav-active");
-    mobileNavToogleButton.classList.toggle("bi-list");
-    mobileNavToogleButton.classList.toggle("bi-x");
-  }
+  // function mobileNavToogle() {
+  //   document.querySelector("body").classList.toggle("mobile-nav-active");
+  //   mobileNavToogleButton.classList.toggle("bi-list");
+  //   mobileNavToogleButton.classList.toggle("bi-x");
+  // }
 
   /**
    * Hide mobile nav on same-page/hash links
@@ -47,11 +41,11 @@ document.addEventListener("DOMContentLoaded", () => {
     let section = document.querySelector(navbarlink.hash);
     if (!section) return;
 
-    navbarlink.addEventListener("click", () => {
-      if (document.querySelector(".mobile-nav-active")) {
-        mobileNavToogle();
-      }
-    });
+    // navbarlink.addEventListener("click", () => {
+    //   if (document.querySelector(".mobile-nav-active")) {
+    //     mobileNavToogle();
+    //   }
+    // });
   });
 
   /**
@@ -116,13 +110,14 @@ document.addEventListener("DOMContentLoaded", () => {
       prevEl: ".custom-swiper-button-prev",
     },
   });
-
+  /**
+   * Change theme
+   */
   function changeTheme(id) {
     const theme = document.getElementsByTagName("link")[11];
     switch (id) {
       case "typography1":
         theme.href = "assets/css/Medieval.css";
-        console.log("haha");
         break;
       case "typography2":
         theme.href = "assets/css/19thCentury.css";
@@ -159,6 +154,10 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("typography6").addEventListener("click", () => {
     changeTheme("typography6");
   });
+  /**
+   * Get metadata
+   */
+
   /**
    * Initiate glightbox
    */

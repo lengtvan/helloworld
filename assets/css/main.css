@@ -680,7 +680,6 @@ section {
   letter-spacing: 0.1rem;
   font-size: 14px;
   font-weight: 700;
-  margin-bottom: 30px;
   border-bottom: 2px solid var(--color-black);
 }
 
@@ -720,11 +719,34 @@ section {
 }
 
 /* custom tab nav on sidebar */
-.aside-block {
-  margin-bottom: 30px;
+.single-post-content .container .row .single-post{
+  max-width:60% !important;
+  position: relative;
+  height: 100vh !important;
+  overflow-y: scroll;
+
+  
+} 
+.single-post-content .container .row .single-post img{
+  max-width: 80% !important;
+  margin: 0 auto !important;
+
+} 
+.single-post-content .container .row .aside-block-container{
+  max-width:25% !important
+  
+  
+} 
+
+
+.aside-block.style {
+  max-width: 5% !important;
+  margin-right: 7% !important ;
 }
 .aside-block .custom-tab-nav .nav-item {
   display: inline-block;
+  margin-right:4%;
+
 }
 .aside-block .custom-tab-nav .nav-item button {
   color: var(--color-black);
@@ -735,7 +757,6 @@ section {
   border-radius: 0;
   padding-left: 0;
   padding-right: 0;
-  margin-right: 20px;
 }
 .aside-block .custom-tab-nav .nav-item button.active {
   background-color: var(--color-black) !important;
@@ -744,23 +765,6 @@ section {
   border-bottom: 2px solid var(--color-black);
 }
 
-.link-video {
-  position: relative;
-}
-.link-video span {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  border-radius: 50%;
-  text-align: center;
-  display: inline-block;
-  background-color: rgba(var(--color-black-rgb), 0.2);
-  color: var(--color-white);
-}
 
 .aside-links li {
   margin-bottom: 10px;
@@ -791,125 +795,12 @@ section {
   border: 1px solid rgba(var(--color-black-rgb), 0.5);
 }
 
-/*--------------------------------------------------------------
-# Comments
---------------------------------------------------------------*/
-.comment {
-  /* Font not working in <textarea> for this version of bs */
-}
-.comment .avatar {
-  position: relative;
-  display: inline-block;
-  width: 3rem;
-  height: 3rem;
-}
-.comment .avatar-img,
-.comment .avatar-initials,
-.comment .avatar-placeholder {
-  width: 100%;
-  height: 100%;
-  border-radius: inherit;
-}
-.comment .avatar-img {
-  display: block;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-.comment .avatar-initials {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-white);
-  line-height: 0;
-  background-color: rgba(var(--color-black-rgba), 0.1);
-}
-.comment .avatar-placeholder {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(var(--color-black-rgba), 0.1) url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='%23fff' d='M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z'/%3e%3c/svg%3e") no-repeat center/1.75rem;
-}
-.comment .avatar-indicator {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 20%;
-  height: 20%;
-  display: block;
-  background-color: rgba(var(--color-black-rgba), 0.1);
-  border-radius: 50%;
-}
-.comment .avatar-group {
-  display: inline-flex;
-}
-.comment .avatar-group .avatar + .avatar {
-  margin-left: -0.75rem;
-}
-.comment .avatar-group .avatar:hover {
-  z-index: 1;
-}
-.comment .avatar-sm,
-.comment .avatar-group-sm > .avatar {
-  width: 2.125rem;
-  height: 2.125rem;
-  font-size: 1rem;
-}
-.comment .avatar-sm .avatar-placeholder,
-.comment .avatar-group-sm > .avatar .avatar-placeholder {
-  background-size: 1.25rem;
-}
-.comment .avatar-group-sm > .avatar + .avatar {
-  margin-left: -0.53125rem;
-}
-.comment .avatar-lg,
-.comment .avatar-group-lg > .avatar {
-  width: 4rem;
-  height: 4rem;
-  font-size: 1.5rem;
-}
-.comment .avatar-lg .avatar-placeholder,
-.comment .avatar-group-lg > .avatar .avatar-placeholder {
-  background-size: 2.25rem;
-}
-.comment .avatar-group-lg > .avatar + .avatar {
-  margin-left: -1rem;
-}
-.comment .avatar-light .avatar-indicator {
-  box-shadow: 0 0 0 2px rgba(var(--color-white-rgba), 0.75);
-}
-.comment .avatar-group-light > .avatar {
-  box-shadow: 0 0 0 2px rgba(var(--color-white-rgba), 0.75);
-}
-.comment .avatar-dark .avatar-indicator {
-  box-shadow: 0 0 0 2px rgba(var(--color-black-rgba), 0.25);
-}
-.comment .avatar-group-dark > .avatar {
-  box-shadow: 0 0 0 2px rgba(var(--color-black-rgba), 0.25);
-}
-.comment textarea {
-  font-family: inherit;
-}
-.comment .comment-replies-title,
-.comment .comment-title {
-  text-transform: uppercase;
-  color: var(--color-black) !important;
-  letter-spacing: 0.1rem;
-  font-size: 14px;
-  font-weight: 600;
-  margin-bottom: 30px;
-}
-.comment .comment-meta .text-muted,
-.comment .reply-meta .text-muted {
-  font-family: var(--font-secondary);
-  font-size: 12px;
-}
+
 
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+
 .contact .info-item {
   text-align: center;
 }

@@ -725,6 +725,11 @@
   }
   
   /* custom tab nav on sidebar */
+  .single-post-content .container .row{
+    display:flex;
+    justify-content: space-between;
+  }
+
   .aside-block {
     margin-bottom: 30px;
   }
