@@ -656,7 +656,7 @@ section {
     padding-right: 15px;
   }
 }
-.post-content .firstcharacter {
+.firstcharacter {
   float: left;
   font-family: 'UnifrakturMaguntia', serif;
   font-size: 75px;
