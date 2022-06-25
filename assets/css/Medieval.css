@@ -1,9 +1,5 @@
 /*Work in Progress :)*/
 
-*{
-  color:rgb(16, 54, 45) !important
-
-}
 
 /**
 * Template Name: ZenBlog - v1.0.0
@@ -23,12 +19,12 @@
 }
 
 body {
-  color: rgba(var(--color-primary-rgb), 1);
+  color: black;
   font-family: 'UnifrakturMaguntia', serif;
 }
 
 a {
-  color: var(--color-links);
+  color: #3d6167;
   text-decoration: none;
 }
 
@@ -55,7 +51,7 @@ section {
 }
 
 .section-header {
-  border-bottom: 2px solid var(--color-black);
+  border-bottom: 2px solid black;
 }
 .section-header h2 {
   font-size: 50px;
@@ -100,7 +96,7 @@ section {
 --------------------------------------------------------------*/
 .page-title {
   font-size: 70px;
-  color: var(--color-black);
+  color: black;
 }
 
 /* Form Input Fieldds */
@@ -126,7 +122,7 @@ section {
   height: 90px;
   transition: all 0.5s;
   z-index: 997;
-  background: #e8d5a3;
+  background: #e5d4a0;
 }
 .header.sticked {
   height: 70px;
@@ -138,7 +134,7 @@ section {
 .header .logo h1 {
   font-size: 30px;
   font-weight: 700;
-  color: var(--color-default);
+  color: black;
   font-family: 'UnifrakturMaguntia', serif;
 }
 
@@ -629,7 +625,6 @@ section {
 
 .more {
   font-family: 'UnifrakturMaguntia', serif;
-  text-transform: uppercase;
   font-size: 12px;
   font-weight: 500;
   position: relative;
@@ -813,14 +808,16 @@ section {
   grid-template-columns: 1fr 1,618fr;
   grid-gap: 1em;
   padding: 0px;
+ 
 }
 
 .grid-item {
   text-align: justify;
   padding: 10px;
   font-size: 12pt;
-  border-bottom: 1px black;
+  margin-bottom: 20pt;
 }
+
 
 .item1 {
   grid-column: 1;
@@ -851,12 +848,16 @@ section {
 .item6 {
   grid-column: 1 / span 2;
   grid-row: 4;
+  
 }
+
+
 
 body {
   background-color: #E6DFB8;
   background-image: url(https://i1.wp.com/clonehouse.com/wp-content/uploads/2018/02/paperbg.jpg?fit=2000%2C1622&ssl=1);
-  background-repeat: repeat;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   margin-top: 50px; 
   margin-bottom: 50px;
   padding-top: 50px;
@@ -865,7 +866,7 @@ body {
 }
 
 h1 {
-  font-size: 20pt;
+  font-size: 60pt;
   font-family: 'UnifrakturMaguntia', serif;
   font-weight: 200;
   color: black;
@@ -874,42 +875,32 @@ h1 {
     
 }
 
-.mb-5 {
-  font-size: 50pt;
-}
-
 h2 {
-    font-size: 9;
-    font-family: 'UnifrakturMaguntia', serif;
-    font-weight: 50;
-    color:rgb(1, 2, 2);
-    text-align: left;
-    
-
-}
-
-h3 {
-  font-size: 10;
+  font-size: 20pt;
   font-family: 'UnifrakturMaguntia', serif;
-  font-weight: 50;
-  color:rgb(1, 2, 2);
-  text-align: justify;  
+  font-weight: 100;
+  color: black;
+  text-align: center;
+
+    
 }
 
 
 
 .blockquote {
 font-size: 16pt;
-color: #FC2B0B;
+text-align: justify;
+padding-top: 1em;
+padding-bottom: 1,618em;
+
 }
 
 
 img {
 max-width: 100%;
-
+filter:grayscale(100%);
+opacity: 70%;
 }
 
-.sepia {
-filter: sepia(100%);
-}
+
 
