@@ -92,13 +92,14 @@ const referencePublication = document.getElementById("publication-keywords")
 const referencePlace = document.getElementById("place-keywords").childNodes[1];
 const referenceConcept =
   document.getElementById("concept-keywords").childNodes[1];
+let prevItem;
 function appendFrequency(articleId, category, parentNode) {
   getKeyWords(articleId);
   let keywords = getKeyWords(articleId);
   //append frequency to person keywords, set click events to link to keywords in article
   let dict = keywords[category];
   let item;
-  let prevItem;
+
   Object.keys(dict).map(function (key, index) {
     var node = document.createElement("li");
     var childNode = document.createElement("a");

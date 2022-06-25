@@ -13,6 +13,7 @@
 --------------------------------------------------------------*/
 :root {
   scroll-behavior: smooth;
+ 
 }
 
 body {
@@ -720,29 +721,30 @@ section {
 
 /* custom tab nav on sidebar */
 .single-post-content .container .row .single-post{
-  max-width:60% !important;
+  max-width:70% !important;
   position: relative;
   height: 100vh !important;
   overflow-y: scroll;
 
   
+}
+.image-wrapper.article1-img1{
+  display:flex;
+  justify-content: center;
+  padding: 10px;
 } 
 .single-post-content .container .row .single-post img{
   max-width: 80% !important;
-  margin: 0 auto !important;
 
 } 
 .single-post-content .container .row .aside-block-container{
-  max-width:25% !important
+  max-width:30% !important
   
   
 } 
 
 
-.aside-block.style {
-  max-width: 5% !important;
-  margin-right: 7% !important ;
-}
+
 .aside-block .custom-tab-nav .nav-item {
   display: inline-block;
   margin-right:4%;
@@ -762,10 +764,17 @@ section {
   background-color: var(--color-black) !important;
   background-color: transparent !important;
   color: var(--color-black);
-  border-bottom: 2px solid var(--color-black);
 }
-
-
+.aside-block .custom-tab-nav .nav-item .nav-link .aside-title{
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 14px;
+  font-weight: 700;
+}
+.aside-block.metadata .aside-tags{
+  display: flex;
+  flex-direction: column;
+}
 .aside-links li {
   margin-bottom: 10px;
   padding-bottom: 10px;
