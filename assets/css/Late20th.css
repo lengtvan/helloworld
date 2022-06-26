@@ -1,0 +1,94 @@
+
+body {
+    background-color: #ffffff;
+    margin-top: 30px; 
+    margin-bottom: 30px;
+    padding-top: 50px;
+    padding-left: 100px; 
+    padding-right: 100px; 
+  }
+ 
+  
+  .mb-5 {
+    font-size: 4vw;
+    font-family: 'Pacifico', cursive;
+    color: #000;;
+    text-align: center;
+     
+        
+  }
+
+  .md-1 {
+
+    font-size: 2.2vw;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center; 
+    border-bottom: 1px solid #7665ad;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+  
+  }
+
+  .md-violet {
+
+    color: #7665ad;    
+  
+  }
+
+  .inside {
+    column-count: 2;
+  }
+/* Style that first letter! */
+
+.firstletter {
+    color: #7665ad; 
+    float: left;
+    margin: 0.3em 0.2em 0.3em 0.1em;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16vw;
+    font-style: oblique;
+    text-shadow: 2px 2px 5px #000;
+    line-height: 60px;
+    padding: auto;
+    
+  }
+
+img {
+    max-width: 100%;
+    
+  }
+
+  .shape{
+    clip-path: polygon(30%, 30%, 30%)
+    
+  }
+
+  .custom-img-5 {
+    max-width: 80%;
+    border-radius: 50%;
+    float: left; padding: 15px 15px 15px 15px; 
+    shape-outside: circle(50%);
+    -webkit-shape-outside: circle(50%);
+    shape-margin: 10px;
+    -webkit-shape-margin: 10px;
+  }
+
+  .blockquote {
+    font-size: 2vw;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: bolder;
+    border-bottom: 1px solid #7665ad;
+    
+  }
+  
+  .pullquote {
+    font-size: 5;
+  
+  }
+ 
+
+
