@@ -74,18 +74,7 @@
         <a href="#" id="typography6" class="mx-2"><span>Typography 6</span></a>
 
 
-        <!-- <a href="#" class="mx-2 js-search-open"><span class="bi-search"></span></a>
-        <i class="bi bi-list mobile-nav-toggle"></i> -->
-
-        <!-- ======= Search Form ======= -->
-        <!-- <div class="search-form-wrap js-search-form-wrap">
-          <form action="search-result.html" class="search-form">
-            <span class="icon bi-search"></span>
-            <input type="text" placeholder="Search" class="form-control">
-            <button class="btn js-search-close"><span class="bi-x"></span></button>
-          </form>
-        </div>End Search Form -->
-
+       
       </div>
 
     </div>
@@ -94,7 +83,7 @@
   </header><!-- End Header -->
   <main id="main">
 
-    <section class="single-post-content">
+    <section class="single-post-content" id="article3">
       <div class="container">
         <div class="row">
           
@@ -189,30 +178,64 @@
               <p>Global coordinated scientific projects, from the <span class="concept" about="IGY">International Geophysical Year</span> to <span class="person" about="Dansgaard">Dansgaard&apos;s</span> ice cores, are emblematic of how new categories and datasets have entered a pre-existing framework. With the establishment of Earth system science in the 1980s, the forecast factory expanded into a multitude of processes, as well as into the domain of politics. While <span class="person" about="Richardson">Richardson</span> was living at a time when human impact was not a factor to reckon with, his fantasy has remained intact even as humanity steps into the foreground of the very processes the factory aims to forecast. With the planet emerging as this century&apos;s prime political object, understanding its history can help us recognise how the <em>planetary</em>, despite its seemingly unequivocal nature, carries a politics of its own. This new Earth – calculable, predictable, overseen and singular – did not rise in a vacuum.</p>
             
             </div>
-            </div><!-- End Single Post Content -->
+            </div>
+          </div> <!-- End Single Post Content -->
 
             
-          <div class="col-md-3">
-            <!-- ======= Sidebar ======= -->
-            <div class="aside-block">
+        
+            <div class="aside-block-container">
+              <div class="aside-block keywords">
 
               <ul class="nav nav-pills custom-tab-nav mb-4" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="pills-popular-tab" data-bs-toggle="pill" data-bs-target="#pills-popular" type="button" role="tab" aria-controls="pills-popular" aria-selected="true">Person</button>
+                  <button class="nav-link active" id="person-tab" data-bs-toggle="pill" data-bs-target="#person-keywords" type="button" role="tab" aria-controls="person-keywords" aria-selected="true"><h3 class="aside-title">Person</h3></button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="pills-trending-tab" data-bs-toggle="pill" data-bs-target="#pills-trending" type="button" role="tab" aria-controls="pills-trending" aria-selected="false">Publication</button>
+                  <button class="nav-link" id="publication-tab" data-bs-toggle="pill" data-bs-target="#publication-keywords" type="button" role="tab" aria-controls="publication-keywords" aria-selected="false"><h3 class="aside-title">Publication</h3></button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="pills-latest-tab" data-bs-toggle="pill" data-bs-target="#pills-latest" type="button" role="tab" aria-controls="pills-latest" aria-selected="false">Organization</button>
+                  <button class="nav-link" id="place-tab" data-bs-toggle="pill" data-bs-target="#place-keywords" type="button" role="tab" aria-controls="place-keywords" aria-selected="false"><h3 class="aside-title">Place</h3></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="concept-tab" data-bs-toggle="pill" data-bs-target="#concept-keywords" type="button" role="tab" aria-controls="concept-keywords" aria-selected="false"><h3 class="aside-title">Concept</h3></button>
                 </li>
               </ul>
+
+              <div class="tab-content" id="pills-tabContent">
+
+                <!-- Person -->
+                <div class="tab-pane fade show active" id="person-keywords" role="tabpanel" aria-labelledby="person-tab">
+                  <ul class="aside-tags list-unstyled">
+      
+                  </ul>
+                </div> <!-- End Person -->
+
+                <!-- Publication -->
+                <div class="tab-pane fade" id="publication-keywords" role="tabpanel" aria-labelledby="publication-tab">
+                  <ul class="aside-tags list-unstyled">
+                   
+                  </ul>
+                </div> <!-- End Publication -->
+
+                <!-- Place -->
+                <div class="tab-pane fade" id="place-keywords" role="tabpanel" aria-labelledby="place-tab">
+                  <ul class="aside-tags list-unstyled">
+                  </ul>
+
+                </div> <!-- End Place -->
+                <!-- Concept -->
+                <div class="tab-pane fade" id="concept-keywords" role="tabpanel" aria-labelledby="concept-tab">
+                  <ul class="aside-tags list-unstyled">
+                  </ul>
+
+                </div> <!-- End Concept -->
+                
+
               </div>
             </div>
 
-           
 
-            <div class="aside-block">
+            <div class="aside-block metadata">
               <h3 class="aside-title">Metadata</h3>
               <ul class="aside-links list-unstyled">
                 <ul class="aside-tags list-unstyled">
@@ -223,10 +246,17 @@
                 </ul>
               </ul>
             </div>
+            </div>
+            
           <!-- End Categories -->
 
-    
-  </main>
+   
+   </div>
+   </div>
+  </section>
+</main>
+
+  </body>
 <!-- End #main -->
 <!--- Footer --->
 
@@ -240,10 +270,7 @@
             </div>
 
             <div class="credits">
-              <!-- All the links in the footer should remain intact. -->
-              <!-- You can delete the links only if you purchased the pro version. -->
-              <!-- Licensing information: https://bootstrapmade.com/license/ -->
-              <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/herobiz-bootstrap-business-template/ -->
+             
               Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
             </div>
 
@@ -274,10 +301,10 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/article3-keyword.js"></script>
 
 </body>
 

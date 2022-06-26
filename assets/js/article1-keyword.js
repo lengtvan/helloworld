@@ -1,16 +1,17 @@
 function getKeyWords(articleId) {
-  let keyword_retrieved = document.getElementById(articleId),
-    keywords = {
-      person: {},
-      place: {},
-      concept: {},
-      publication: {},
-      organization: {},
-    },
-    person = keyword_retrieved.getElementsByClassName("person"),
-    place = keyword_retrieved.getElementsByClassName("place"),
-    concept = keyword_retrieved.getElementsByClassName("concept"),
-    publication = keyword_retrieved.getElementsByClassName("publication");
+  let keyword_retrieved = document.getElementById(articleId);
+  console.log(keyword_retrieved);
+  keywords = {
+    person: {},
+    place: {},
+    concept: {},
+    publication: {},
+    organization: {},
+  };
+  person = keyword_retrieved.getElementsByClassName("person");
+  place = keyword_retrieved.getElementsByClassName("place");
+  concept = keyword_retrieved.getElementsByClassName("concept");
+  publication = keyword_retrieved.getElementsByClassName("publication");
 
   // frequency distribution computation
   for (let i = 0; i < person.length; i++) {
@@ -93,9 +94,11 @@ const referencePlace = document.getElementById("place-keywords").childNodes[1];
 const referenceConcept =
   document.getElementById("concept-keywords").childNodes[1];
 let prevItem;
+
 function appendFrequency(articleId, category, parentNode) {
   getKeyWords(articleId);
   let keywords = getKeyWords(articleId);
+  console.log(keywords);
   //append frequency to person keywords, set click events to link to keywords in article
   let dict = keywords[category];
   let item;
@@ -148,3 +151,36 @@ window.addEventListener(
   "load",
   appendFrequency("article1", "concept", referenceConcept)
 );
+
+// window.addEventListener(
+//   "load",
+//   appendFrequency("article2", "person", referencePerson)
+// );
+// window.addEventListener(
+//   "load",
+//   appendFrequency("article2", "publication", referencePublication)
+// );
+// window.addEventListener(
+//   "load",
+//   appendFrequency("article2", "place", referencePlace)
+// );
+// window.addEventListener(
+//   "load",
+//   appendFrequency("article2", "concept", referenceConcept)
+// );
+// window.addEventListener(
+//   "load",
+//   appendFrequency("article3", "person", referencePerson)
+// );
+// window.addEventListener(
+//   "load",
+//   appendFrequency("article3", "publication", referencePublication)
+// );
+// window.addEventListener(
+//   "load",
+//   appendFrequency("article3", "place", referencePlace)
+// );
+// window.addEventListener(
+//   "load",
+//   appendFrequency("article3", "concept", referenceConcept)
+// );
