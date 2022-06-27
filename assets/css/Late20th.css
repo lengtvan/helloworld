@@ -60,20 +60,22 @@ img {
     
   }
 
-  .shape{
-    clip-path: polygon(30%, 30%, 30%)
-    
-  }
-
-  .custom-img-5 {
-    max-width: 80%;
+  .custom-img {
+    max-width: 60%;
     border-radius: 50%;
     float: left; padding: 15px 15px 15px 15px; 
     shape-outside: circle(50%);
     -webkit-shape-outside: circle(50%);
     shape-margin: 10px;
     -webkit-shape-margin: 10px;
+  
   }
+
+  .shape{
+    clip-path: polygon(30%, 30%, 30%)
+    
+  }
+
 
   .blockquote {
     font-size: 2vw;
