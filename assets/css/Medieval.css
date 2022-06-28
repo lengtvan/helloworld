@@ -1,16 +1,3 @@
-/*Work in Progress :)*/
-
-
-/**
-* Template Name: ZenBlog - v1.0.0
-* Template URL: https://bootstrapmade.com/zenblog-bootstrap-blog-template/
-* Author: BootstrapMade.com
-* License: https:///bootstrapmade.com/license/
-*/
-
-/**
-* Check out variables.css for easy customization of colors, typography, and other repetitive properties
-*/
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -20,7 +7,7 @@
 
 body {
   color: black;
-  font-family: 'UnifrakturMaguntia', serif;
+  font-family: 'UnifrakturMaguntia';
 }
 
 a {
@@ -34,8 +21,8 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'UnifrakturMaguntia', serif;
-  font-weight: bolder;
+  font-family: 'UnifrakturMaguntia';
+  color: black;
 }
 
 #main {
@@ -71,7 +58,7 @@ section {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: var(--color-primary);
+ background: var(--color-primary);
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -99,7 +86,7 @@ section {
   color: black;
 }
 
-/* Form Input Fieldds */
+/* Form Input Fields */
 .form-control:active, .form-control:focus {
   outline: none;
   box-shadow: none;
@@ -135,56 +122,9 @@ section {
   font-size: 30px;
   font-weight: 700;
   color: black;
-  font-family: 'UnifrakturMaguntia', serif;
+  font-family: 'UnifrakturMaguntia';
 }
 
-.search-form-wrap {
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 9;
-  transition: 0.3s all ease;
-  visibility: hidden;
-  opacity: 0;
-}
-.search-form-wrap .search-form {
-  position: relative;
-}
-.search-form-wrap .search-form .form-control {
-  width: 300px;
-  border: none;
-  box-shadow: 0 15px 20px -10px rgba(var(--color-black-rgb), 0.1);
-  padding-left: 40px;
-  padding-right: 40px;
-}
-.search-form-wrap .search-form .form-control:active, .search-form-wrap .search-form .form-control:focus {
-  outline: none;
-  box-shadow: none;
-}
-.search-form-wrap .search-form .icon {
-  position: absolute;
-  left: 0;
-  top: 7px;
-  opacity: 0.5;
-  left: 10px;
-}
-.search-form-wrap .search-form .btn {
-  position: absolute;
-  top: 2px;
-  right: 4px;
-  padding: 0;
-  margin: 0;
-  line-height: 1;
-  font-size: 30px;
-}
-.search-form-wrap .search-form .btn:active, .search-form-wrap .search-form .btn:focus {
-  outline: none;
-  box-shadow: none;
-}
-.search-form-wrap.active {
-  visibility: visible;
-  opacity: 1;
-}
 
 section {
   scroll-margin-top: 70px;
@@ -212,7 +152,7 @@ section {
     align-items: center;
     justify-content: space-between;
     padding: 10px 0 10px 30px;
-    font-family: 'UnifrakturMaguntia', serif;
+    font-family: 'UnifrakturMaguntia';
     font-size: 16px;
     font-weight: 500;
     color: rgba(var(--color-default-rgb), 1);
@@ -322,7 +262,7 @@ section {
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    font-family: 'UnifrakturMaguntia', serif;
+    font-family: 'UnifrakturMaguntia';
     font-size: 15px;
     font-weight: 600;
     color: var(--color-primary);
@@ -387,6 +327,13 @@ section {
 /*--------------------------------------------------------------
 # Posts
 --------------------------------------------------------------*/
+.grid-container
+{
+background-color:none;
+font-size: 20px;
+font-family:'UniFrakturMaguntia';
+}
+
 .post-entry-1 {
   margin-bottom: 30px;
 }
@@ -413,7 +360,7 @@ section {
   letter-spacing: 0.07rem;
   text-transform: uppercase;
   font-weight: 600;
-  font-family: 'UnifrakturMaguntia', serif;
+  font-family: 'UnifrakturMaguntia';
   color: rgba(var(--color-black-rgb), 0.4);
   margin-bottom: 10px;
 }
@@ -436,7 +383,7 @@ section {
   margin: 0;
   padding: 0;
   font-size: 15px;
-  font-family: 'UnifrakturMaguntia', serif;
+  font-family: 'UnifrakturMaguntia';
 }
 
 .trending {
@@ -496,7 +443,7 @@ section {
   letter-spacing: 0.07rem;
   text-transform: uppercase;
   font-weight: 600;
-  font-family: 'UnifrakturMaguntia', serif;
+  font-family: 'UnifrakturMaguntia';
   color: rgba(var(--color-black-rgb), 0.4);
   margin-bottom: 10px;
 }
@@ -624,7 +571,7 @@ section {
 }
 
 .more {
-  font-family: 'UnifrakturMaguntia', serif;
+  font-family: 'UnifrakturMaguntia';
   font-size: 12px;
   font-weight: 500;
   position: relative;
@@ -653,7 +600,7 @@ section {
 }
 .firstcharacter {
   float: left;
-  font-family: 'UnifrakturMaguntia', serif;
+  font-family: 'UnifrakturMaguntia';
   font-size: 75px;
   line-height: 60px;
   padding-top: 4px;
@@ -674,7 +621,7 @@ section {
   }
 }
 .post-content figure figcaption {
-  font-family: 'UnifrakturMaguntia', serif;
+  font-family: 'UnifrakturMaguntia';
   font-size: 14px;
   padding: 10px 0 0 0;
 }
@@ -699,7 +646,7 @@ section {
   line-height: 40px;
   text-align: center;
   border-radius: 50%;
-  font-family: 'UnifrakturMaguntia', serif;
+  font-family: 'UnifrakturMaguntia';
   margin: 5px;
   transition: 0.3s all ease;
 }
@@ -795,14 +742,20 @@ section {
   border: 1px solid rgba(var(--color-black-rgb), 0.5);
 }
 
-/*--------------------------------------------------------------
-# Comments
---------------------------------------------------------------*/
+.aside-block .custom-tab-nav .nav-item .nav-link .aside-title{
+  letter-spacing: 0.1rem;
+  font-size: 14px;
+  font-weight: 700;
+}
+.nav-pills .nav-link.active{
+  background-color: transparent !important;
+}
+
+
 
 /*--------------------------------------------------------------
 # Grid
 --------------------------------------------------------------*/
-
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1,618fr;
@@ -815,12 +768,13 @@ section {
   text-align: justify;
   padding: 10px;
   font-size: 12pt;
-  margin-bottom: 20pt;
+  margin-bottom: 30pt;
+
 }
 
 
 .item1 {
-  grid-column: 1;
+  column-count: 2;
   grid-row: 2;
 }
 
@@ -830,24 +784,24 @@ section {
 }
 
 .item3 {
-  grid-column: 2;
-  grid-row: 2;
+  column-count: 2;
+  grid-row: 3;
 }
 
 .item4 {
-  grid-column: 1;
-  grid-row: 3;
+  column-count: 2;
+  grid-row: 4;
 }
 
 .item5 {
-  grid-column: 2;
-  grid-row: 3;
+  column-count: 2;
+  grid-row: 5;
 }
 
 
 .item6 {
-  grid-column: 1 / span 2;
-  grid-row: 4;
+  column-count: 2;
+  grid-row: 6;
   
 }
 
@@ -863,11 +817,12 @@ body {
   padding-top: 50px;
   padding-left: 200px; 
   padding-right: 200px; 
+
 }
 
 h1 {
   font-size: 60pt;
-  font-family: 'UnifrakturMaguntia', serif;
+  font-family: 'UnifrakturMaguntia';
   font-weight: 200;
   color: black;
   text-align: center;
@@ -877,7 +832,7 @@ h1 {
 
 h2 {
   font-size: 20pt;
-  font-family: 'UnifrakturMaguntia', serif;
+  font-family: 'UnifrakturMaguntia';
   font-weight: 100;
   color: black;
   text-align: center;
