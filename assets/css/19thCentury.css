@@ -67,7 +67,7 @@ body {
 
 
   .mrd-2 {
-    font-size: 3vw;
+    font-size: 3em;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: underline;
     text-transform: uppercase;
@@ -78,8 +78,8 @@ body {
 
 
   .mrd-1{
-  font-size: 1vw;
-  font-family: 'IBM Plex Serif';
+  font-size: 2em;
+  font-family: 'IBM Plex Serif', serif;
   font-style: bolder;
   font-weight: 40;
   color:black;
@@ -88,8 +88,8 @@ body {
   }
 
   .custom-t1 {
-    font-size: 2vw;
-    font-family: 'Oswald', sans-serif;
+    font-size: 3em;
+    font-family: 'Arial Black';
     font-weight: bolder;
     text-transform: uppercase;
     text-align: center;
@@ -100,7 +100,7 @@ body {
   .custom-t2 {
     float: left;
     margin: 0.3em 0.2em 0.3em 0.1em;
-    font-size: 2.3vw;
+    font-size: 2.3em;
     font-family: 'Libre Bodoni', serif;
     font-weight: bold;
     text-transform: uppercase;
@@ -111,8 +111,9 @@ body {
 
 
   .custom-t3 {
-    font-size: 2vw;
-    font-family: 'Calibri';
+    font-size: 2em;
+    font-family: 'Oswald', sans-serif;
+    font-size: xx-large;
     font-weight: bolder;
     text-transform: uppercase;
     text-align: center;
@@ -122,7 +123,7 @@ body {
   }
 
   .custom-t4 {
-    font-size: 2vw;
+    font-size: 2em;
     font-family: 'Arial Black';
     font-weight: bold;
     text-transform: uppercase;
@@ -143,7 +144,7 @@ p {
 }
 
   .p1 {
-  font-size: 0.8vw;
+  font-size: 0.8em;
   font-family: 'PT Serif', serif;
   font-style: oblique;
   color:black;
@@ -155,7 +156,7 @@ p {
 }
 
   .p2 {
-  font-size: 1vw;
+  font-size: 1em;
   font-family: 'Arial Black';
   font-stretch: 8;
   color:rgb(1, 2, 2);
@@ -169,7 +170,7 @@ p {
 }
 
   .p3 {
-  font-size: 1.5vw;
+  font-size: 1.5em;
   font-family: 'Verdana';
   font-style: bolder;
   text-decoration: overline;
