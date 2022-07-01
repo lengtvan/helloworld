@@ -207,7 +207,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0 10px 30px;
+    padding: 10px 0 10px 50px;
     font-family: var(--font-default);
     font-size: 16px;
     font-weight: 500;
@@ -292,6 +292,7 @@ section {
 .mobile-nav-toggle {
   display: none;
 }
+
 
 /*--------------------------------------------------------------
 # Mobile Navigation
@@ -380,6 +381,8 @@ section {
     display: block;
   }
 }
+
+  
 /*--------------------------------------------------------------
 # Posts
 --------------------------------------------------------------*/
@@ -1014,3 +1017,22 @@ section {
 .footer .credits a {
   color: var(--color-white);
 }
+
+
+/*--------------------------------------------------------------
+# Additional
+--------------------------------------------------------------*/
+
+.stylemenu {
+  background-color: #fadf40;
+  color: #fff;
+  margin-top: 60px; 
+  margin-bottom: 50px;
+  padding-top: 50px;
+  padding-left: 50px; 
+  padding-right: 50px; 
+ 
+}
+
+
+  
