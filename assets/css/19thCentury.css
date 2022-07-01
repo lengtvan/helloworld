@@ -112,7 +112,7 @@ body {
 
   .custom-t3 {
     font-size: 2vw;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Calibri';
     font-weight: bolder;
     text-transform: uppercase;
     text-align: center;
@@ -181,7 +181,7 @@ p {
 }
 
   .blockquote {
-  font-size: 5;
+  font-size: 10;
   font-family: 'Helvetica';
   text-transform: uppercase;
   font-style: bolder;
@@ -207,5 +207,6 @@ img {
   .custom-img {
   border-radius: 50%;
   filter: sepia(100%);
+  align-self: center;
  
 }
