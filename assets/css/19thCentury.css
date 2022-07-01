@@ -46,14 +46,13 @@
     grid-column: 2 / span 3;
   }
 
-  body {
+body {
     background-color:#E5D4A0;
     font-family: inherit;
-    margin-top: 50px; 
+    margin-top: 20px; 
     margin-bottom: 50px;
-    padding-top: 50px;
-    padding-left: 100px; 
-    padding-right: 100px; 
+    padding-top: 20px;
+    
   }
 
   .stylemenu {
@@ -66,10 +65,9 @@
   }
 
 
-  .md-2 {
+  .mrd-2 {
     font-size: 3vw;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 200;
     text-decoration: underline;
     text-transform: uppercase;
     color:#2d2b28;
@@ -78,29 +76,27 @@
   }
 
 
-.md-1{
-  font-size: 1.5vw;
+  .mrd-1{
+  font-size: 1vw;
   font-family: 'IBM Plex Serif';
+  font-style: bolder;
   font-weight: 40;
   color:black;
   text-align: left;
 
-}
+  }
 
-.custom-t1 {
-    font-size: 3vw;
+  .custom-t1 {
+    font-size: 2vw;
     font-family: 'Oswald', sans-serif;
     font-weight: bolder;
     text-transform: uppercase;
     text-align: center;
     float: left;
-    margin: 0.3em 0.2em 0.3em 0.1em;
-    
   
   }
 
-.custom-t2 {
-    word-wrap: break-word;
+  .custom-t2 {
     float: left;
     margin: 0.3em 0.2em 0.3em 0.1em;
     font-size: 2.3vw;
@@ -113,21 +109,18 @@
   }
 
 
-.custom-t3 {
-    word-wrap: break-word;
-    font-size: 3vw;
+  .custom-t3 {
+    font-size: 2vw;
     font-family: 'Oswald', sans-serif;
     font-weight: bolder;
     text-transform: uppercase;
     text-align: center;
-    border-color : black ;
-    border-style : solid ;
-    border-width: 2;
+   
     
     
   }
 
-.custom-t4 {
+  .custom-t4 {
     font-size: 2vw;
     font-family: 'Arial Black';
     font-weight: bold;
@@ -148,19 +141,19 @@ p {
   text-align: justify;  
 }
 
-.p1 {
+  .p1 {
   font-size: 0.8vw;
   font-family: 'PT Serif', serif;
   font-style: oblique;
-  color:rgb(1, 2, 2);
-  text-align: justify;  
+  color:black;
+  text-align: left;  
   border-color : rgb(10, 9, 9) ;
   border-style : solid ;
   border-width: 4px;
       
 }
 
-.p2 {
+  .p2 {
   font-size: 1vw;
   font-family: 'Arial Black';
   font-stretch: 8;
@@ -174,9 +167,10 @@ p {
     
 }
 
-.p3 {
-  font-size: 2vw;
-  font-family: 'Arial Black';
+  .p3 {
+  font-size: 1.5vw;
+  font-family: 'Verdana';
+  font-style: bolder;
   text-decoration: overline;
   color:rgb(1, 2, 2);
   text-align: center; 
@@ -185,7 +179,7 @@ p {
     
 }
 
-.blockquote {
+  .blockquote {
   font-size: 5;
   font-family: 'Helvetica';
   text-transform: uppercase;
@@ -194,7 +188,7 @@ p {
   
 }
 
-.pullquote {
+  .pullquote {
   font-size: 5;
 
 }
@@ -204,16 +198,12 @@ img {
   
 }
 
-.sepia {
+  .sepia {
   filter: sepia(100%);
-}
-
-img {
-  max-width: 100%;
   
 }
 
-.custom-img {
+  .custom-img {
   border-radius: 50%;
   filter: sepia(100%);
  
