@@ -1024,7 +1024,7 @@ section {
 --------------------------------------------------------------*/
 
 .stylemenu {
-  background-color: #fadf40;
+  background-color: inherit;
   color: #fff;
   margin-top: 60px; 
   margin-bottom: 50px;
