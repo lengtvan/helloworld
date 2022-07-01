@@ -25,7 +25,9 @@
     font-family: 'Limelight', cursive !important;
     color:whitesmoke;
   }
-  
+  .grid-container .grid-item.item2{
+    padding: 20px;
+  }
   #main {
     margin-top: 90px;
   }
@@ -38,16 +40,7 @@
     overflow: hidden;
   }
   
-  .section-header {
-    border-bottom: 2px solid var(--color-black);
-  }
-  .section-header h2 {
-    font-size: 50px;
-    color: var(--color-black);
-  }
-  .section-header p {
-    margin-bottom: 0;
-  }
+  
   
   /*--------------------------------------------------------------
   # Scroll top button
@@ -391,8 +384,9 @@ font-family:'Poiret One', cursive;
 
     color: var(--color-black);
   }
-  .aside-block.metadata h3.aside-title {
+  .aside-block h3.aside-title {
     font-family: 'Limelight', cursive;
+    font-size:16px;
   }
   .aside-block.metadata .aside-tags{
   display: flex;
@@ -434,7 +428,6 @@ font-family:'Poiret One', cursive;
     font-family: 'Limelight', cursive;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    font-size: 14px;
     font-weight: 700;
   }
   .nav-pills .nav-link.active{
