@@ -93,5 +93,13 @@ img {
   
   }
  
+  .stylemenu {
+    background-color: #d1d4da;
+    font-family: 'Oswald', sans-serif;
+    border-color : #7665ad ;
+    border-style : solid ;
+    border-width: 3;
+
+  }
 
 
