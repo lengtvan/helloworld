@@ -74,15 +74,6 @@
         </ul>
       </nav><!-- .navbar -->
 
-      <div class="position-relative">
-        <a href="#" id ="typography1" class="mx-2"><span>Typography 1</span></a>
-        <a href="#" id ="typography2" class="mx-2"><span>Typography 2</span></a>
-        <a href="#" id="typography3" class="mx-2"><span>Typography 3</span></a>
-        <a href="#" id="typography4" class="mx-2"><span>Typography 4</span></a>
-        <a href="#" id="typography5" class="mx-2"><span>Typography 5</span></a>
-        <a href="#" id="typography6" class="mx-2"><span>Typography 6</span></a>
-
-
         <!-- <a href="#" class="mx-2 js-search-open"><span class="bi-search"></span></a>
         <i class="bi bi-list mobile-nav-toggle"></i> -->
 
@@ -102,6 +93,27 @@
   </header>
 
 </header>
+
+<!-- Style Menu -->
+
+<nav class="stylemenu">
+  <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+    <a href="index.html" class="logo d-flex align-items-center">
+      
+      <h4 span="stylemenu">Choose your Style:</h4>
+    </a> 
+    
+    <a href="#" id="typography1"  class="mx-2"><span>Medieval</span></a>
+    <a href="#" id= "typography2" class="mx-2"><span>19th Century</span></a>
+    <a href="#" id="typography3"  class="mx-2"><span>Firsthalf 20th</span></a>
+    <a href="#" id="typography4"  class="mx-2"><span>Secondhalf 20th</span></a>
+    <a href="#" id= "typography5" class="mx-2"><span>Late 20th</span></a>
+    <a href="#" id= "typography6" class="mx-2"><span>2030</span></a>
+
+  </div>
+</nav>
+
+<!-- End Style Menu -->
 
 <!-- End Header -->
   <main id="main">
@@ -631,24 +643,39 @@
               
             
             <!-- ======= Sidebar ======= -->
-            <div class="aside-block">
+            <div class="aside-block-container">
+              <!-- ======= Style Sidebar ======= -->
+           <div class="aside-block style">
+             <h3 class="aside-title">Style it!</h3>
+             <ul class="aside-links list-unstyled">
+               <ul class="aside-tags list-unstyled">
+                 <li><a href="#" id ="typography1" class="mx-2"><span>Medieval</span></a></li>
+                 <li><a href="#" id ="typography2" class="mx-2"><span>19thCentury</span></a></li>
+                 <li><a href="#" id="typography3" class="mx-2"><span>Early20th</span></a></li>
+                 <li><a href="#" id="typography4" class="mx-2"><span>Secondhalf20th</span></a></li>
+                 <li><a href="#" id="typography5" class="mx-2"><span>Late20th</span></a></li>
+                 <li><a href="#" id="typography6" class="mx-2"><span>2030</span></a></li>
+               </ul>
+             </ul>
+           </div>
+              <div class="aside-block keywords">
 
-              <ul class="nav nav-pills custom-tab-nav mb-4" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="pills-popular-tab" data-bs-toggle="pill" data-bs-target="#pills-popular" type="button" role="tab" aria-controls="pills-popular" aria-selected="true">Person</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="pills-trending-tab" data-bs-toggle="pill" data-bs-target="#pills-trending" type="button" role="tab" aria-controls="pills-trending" aria-selected="false">Place</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="pills-latest-tab" data-bs-toggle="pill" data-bs-target="#pills-latest" type="button" role="tab" aria-controls="pills-latest" aria-selected="false">Publication</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="pills-concept-tab" data-bs-toggle="pill" data-bs-target="#pills-concept" type="button" role="tab" aria-controls="pills-latest" aria-selected="false">Concept</button>
-                </li>
-              </ul>
+             <ul class="nav nav-pills custom-tab-nav mb-4" id="pills-tab" role="tablist">
+               <li class="nav-item" role="presentation">
+                 <button class="nav-link active" id="person-tab" data-bs-toggle="pill" data-bs-target="#person-keywords" type="button" role="tab" aria-controls="person-keywords" aria-selected="true"><h3 class="aside-title">Person</h3></button>
+               </li>
+               <li class="nav-item" role="presentation">
+                 <button class="nav-link" id="publication-tab" data-bs-toggle="pill" data-bs-target="#publication-keywords" type="button" role="tab" aria-controls="publication-keywords" aria-selected="false"><h3 class="aside-title">Publication</h3></button>
+               </li>
+               <li class="nav-item" role="presentation">
+                 <button class="nav-link" id="place-tab" data-bs-toggle="pill" data-bs-target="#place-keywords" type="button" role="tab" aria-controls="place-keywords" aria-selected="false"><h3 class="aside-title">Place</h3></button>
+               </li>
+               <li class="nav-item" role="presentation">
+                 <button class="nav-link" id="concept-tab" data-bs-toggle="pill" data-bs-target="#concept-keywords" type="button" role="tab" aria-controls="concept-keywords" aria-selected="false"><h3 class="aside-title">Concept</h3></button>
+               </li>
+             </ul>
 
-              <div class="tab-content" id="pills-tabContent">
+             <div class="tab-content" id="pills-tabContent">
 
                 <!-- Person -->
                 <div class="tab-pane fade show active" id="pills-popular" role="tabpanel" aria-labelledby="pills-popular-tab">
