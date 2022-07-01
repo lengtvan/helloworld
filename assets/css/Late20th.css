@@ -7,22 +7,28 @@ body {
     padding-left: 100px; 
     padding-right: 100px; 
   }
+
+  p {
+    font-family: 'Times New Roman';
+    color:rgb(1, 2, 2);
+    text-align: left; 
+
+  }
  
   
-  .md-2 {
-    font-size: 4vw;
+  .mrd-2 {
+    font-size: 4em;
     font-family: 'Pacifico', cursive;
-    color: #000;;
+    color: #000;
     text-align: center;
      
         
   }
 
-  .md-1 {
+  .mrd-1 {
 
-    font-size: 2.2vw;
+    font-size: 2.2em;
     font-family: 'Oswald', sans-serif;
-    font-weight: bolder;
     text-transform: uppercase;
     text-align: center; 
     border-bottom: 1px solid #7665ad;
@@ -57,7 +63,7 @@ body {
 
 img {
     max-width: 100%;
-    
+        
   }
 
   .custom-img {
@@ -68,17 +74,12 @@ img {
     -webkit-shape-outside: circle(50%);
     shape-margin: 10px;
     -webkit-shape-margin: 10px;
-  
   }
 
-  .shape{
-    clip-path: polygon(30%, 30%, 30%)
-    
-  }
 
 
   .blockquote {
-    font-size: 2vw;
+    font-size: 2em;
     font-family: 'Poppins', sans-serif;
     text-align: center;
     text-transform: uppercase;
@@ -92,5 +93,13 @@ img {
   
   }
  
+  .stylemenu {
+    background-color: #d1d4da;
+    font-family: 'Oswald', sans-serif;
+    border-color : #7665ad ;
+    border-style : solid ;
+    border-width: 3;
+
+  }
 
 
