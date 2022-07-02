@@ -20,10 +20,8 @@ function changeTheme(id) {
       theme.href = "assets/css/2030.css";
       break;
     case "default":
-      theme.href = "asset/css/main.css";
+      theme.href = "assets/css/main.css";
       break;
-    default:
-      theme.href = "asset/css/main.css";
   }
 }
 document.getElementById("typography1").addEventListener("click", () => {
