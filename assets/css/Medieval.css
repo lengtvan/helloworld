@@ -586,6 +586,7 @@ font-family:'UniFrakturMaguntia', cursive;
 
 .aside-block {
   margin-bottom: 30px;
+  font-style: 'UnifrakturMaguntia', cursive;
 }
 .aside-block .custom-tab-nav .nav-item {
   display: inline-block;
@@ -671,7 +672,7 @@ font-family:'UniFrakturMaguntia', cursive;
 --------------------------------------------------------------*/
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1,618fr;
+  grid-template-columns: auto auto;
   grid-gap: 1em;
   padding: 0px;
  
@@ -742,7 +743,7 @@ body {
 
     
 
-mrd-1 {
+.mrd-1 {
   font-size: 20pt;
   font-family: 'UnifrakturMaguntia', cursive;
   font-weight: 100;
