@@ -48,59 +48,7 @@ section {
   margin-bottom: 0;
 }
 
-/*--------------------------------------------------------------
-# Scroll top button
---------------------------------------------------------------*/
-.scroll-top {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: 15px;
-  z-index: 99999;
- background: var(--color-primary);
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
-  transition: all 0.4s;
-}
-.scroll-top i {
-  font-size: 24px;
-  color: #fff;
-  line-height: 0;
-}
-.scroll-top:hover {
-  background: rgba(var(--color-primary-rgb), 0.8);
-  color: #fff;
-}
-.scroll-top.active {
-  visibility: visible;
-  opacity: 1;
-}
 
-/*--------------------------------------------------------------
-# Page title
---------------------------------------------------------------*/
-.page-title {
-  font-size: 70px;
-  color: black;
-}
-
-/* Form Input Fields */
-.form-control:active, .form-control:focus {
-  outline: none;
-  box-shadow: none;
-  border-color: var(--color-black);
-}
-
-.btn:active, .btn:focus {
-  outline: none;
-}
-.btn.btn-primary {
-  background-color: var(--color-black);
-  color: var(--color-white);
-  border-color: var(--color-black);
-}
 
 /*--------------------------------------------------------------
 # Header
@@ -692,7 +640,6 @@ font-family:'UniFrakturMaguntia';
   background-color: var(--color-black) !important;
   background-color: transparent !important;
   color: var(--color-black);
-  border-bottom: 2px solid var(--color-black);
 }
 
 .link-video {
