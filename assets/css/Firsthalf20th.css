@@ -9,6 +9,7 @@
     color: rgba(var(--color-primary-rgb), 1);
     background-image:url(https://images.unsplash.com/photo-1612487528505-d2338264c821?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
     background-size: cover; 
+    font-family: 'Limelight',cursive;
   }
   
   a {
