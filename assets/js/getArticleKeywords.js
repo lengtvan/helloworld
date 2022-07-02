@@ -134,40 +134,59 @@ function appendFrequency(articleId, category, parentNode) {
     parentNode.appendChild(node);
   });
 }
+if (document.URL.includes("article1")) {
+  window.addEventListener(
+    "load",
+    appendFrequency("article1", "person", referencePerson)
+  );
+  window.addEventListener(
+    "load",
+    appendFrequency("article1", "publication", referencePublication)
+  );
+  window.addEventListener(
+    "load",
+    appendFrequency("article1", "place", referencePlace)
+  );
+  window.addEventListener(
+    "load",
+    appendFrequency("article1", "concept", referenceConcept)
+  );
+} else if (document.URL.includes("article2")) {
+  window.addEventListener(
+    "load",
+    appendFrequency("article2", "person", referencePerson)
+  );
+  window.addEventListener(
+    "load",
+    appendFrequency("article2", "publication", referencePublication)
+  );
+  window.addEventListener(
+    "load",
+    appendFrequency("article2", "place", referencePlace)
+  );
+  window.addEventListener(
+    "load",
+    appendFrequency("article2", "concept", referenceConcept)
+  );
+} else if (document.URL.includes("article3")) {
+  window.addEventListener(
+    "load",
+    appendFrequency("article3", "person", referencePerson)
+  );
+  window.addEventListener(
+    "load",
+    appendFrequency("article3", "publication", referencePublication)
+  );
+  window.addEventListener(
+    "load",
+    appendFrequency("article3", "place", referencePlace)
+  );
+  window.addEventListener(
+    "load",
+    appendFrequency("article3", "concept", referenceConcept)
+  );
+}
 
-window.addEventListener(
-  "load",
-  appendFrequency("article1", "person", referencePerson)
-);
-window.addEventListener(
-  "load",
-  appendFrequency("article1", "publication", referencePublication)
-);
-window.addEventListener(
-  "load",
-  appendFrequency("article1", "place", referencePlace)
-);
-window.addEventListener(
-  "load",
-  appendFrequency("article1", "concept", referenceConcept)
-);
-
-// window.addEventListener(
-//   "load",
-//   appendFrequency("article2", "person", referencePerson)
-// );
-// window.addEventListener(
-//   "load",
-//   appendFrequency("article2", "publication", referencePublication)
-// );
-// window.addEventListener(
-//   "load",
-//   appendFrequency("article2", "place", referencePlace)
-// );
-// window.addEventListener(
-//   "load",
-//   appendFrequency("article2", "concept", referenceConcept)
-// );
 // window.addEventListener(
 //   "load",
 //   appendFrequency("article3", "person", referencePerson)

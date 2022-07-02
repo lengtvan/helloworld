@@ -124,7 +124,7 @@ function appendFrequency(articleId, category, parentNode) {
         item = document.getElementById(`${key}-mention-${i}`);
         console.log(item);
         item.style.backgroundColor = "#FDFF47";
-        item.style.scrollMarginTop = "90px";
+        item.style.scrollMarginTop = "80px";
         item.scrollIntoView(true, { block: "start", inline: "start" });
 
         i++;
