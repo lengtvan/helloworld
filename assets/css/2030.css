@@ -47,6 +47,9 @@ font-family:'Exo', sans-serif;
     font-family: 'Orbitron', sans-serif !important;
     ;
   }
+  h2{
+    font-weight: 100;
+  }
   .aside-block {
     background-color:rgba(var(--color-black-rgb), 0.5) ;
     font-family:'Exo', sans-serif;
