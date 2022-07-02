@@ -186,20 +186,3 @@ if (document.URL.includes("article1")) {
     appendFrequency("article3", "concept", referenceConcept)
   );
 }
-
-// window.addEventListener(
-//   "load",
-//   appendFrequency("article3", "person", referencePerson)
-// );
-// window.addEventListener(
-//   "load",
-//   appendFrequency("article3", "publication", referencePublication)
-// );
-// window.addEventListener(
-//   "load",
-//   appendFrequency("article3", "place", referencePlace)
-// );
-// window.addEventListener(
-//   "load",
-//   appendFrequency("article3", "concept", referenceConcept)
-// );
