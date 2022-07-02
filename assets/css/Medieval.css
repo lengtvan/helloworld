@@ -24,7 +24,6 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'UnifrakturMaguntia', cursive;
-  color: black;
 }
 
 #main {
@@ -762,6 +761,17 @@ padding-top: 1em;
 padding-bottom: 1,618em;
 
 }
+  
+  .firstletter {
+  float: left;
+  font-family: 'UnifrakturMaguntia';
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+  color: #3d6167;
+}
 
 
 img {
@@ -777,11 +787,11 @@ opacity: 70%;
 .stylemenu {
   background-color: #e5d4a0;
   color: #fff;
-  margin-top: 60px; 
-  margin-bottom: 50px;
-  padding-top: 50px;
+  margin-top: 2em; 
+  margin-bottom: 3,236em;
   padding-left: 50px; 
   padding-right: 50px; 
+  font-family: 'UnifrakturMaguntia', cursive;
  
 }
 
