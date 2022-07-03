@@ -9,6 +9,7 @@ body {
   }
 
   p {
+    background-color: #ffffff;
     font-family: 'Times New Roman';
     color:rgb(1, 2, 2);
     text-align: left; 
