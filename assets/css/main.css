@@ -378,19 +378,24 @@ section {
 }
 
 .project-title span:nth-child(2) {
-  animation: showup 10s, onoff 5s infinite;
+  animation: showup 10s, onoff 10s infinite;
   animation-delay: 0s, 10s;
+  animation-timing-function: ease-in, ease-out;
 }
 
 .project-title span:nth-child(3) {
   animation: slidein-right 10s;
 }
 @keyframes onoff{
-  from{
+  0%{
 color:transparent}
- to {
+ 50% {
   color:inherit;
  }
+ 100% {
+  color:transparent;
+ }
+
 }
 /* @keyframes switch{
 0%{
@@ -429,7 +434,7 @@ color:transparent}
     margin-left: -30%;
   }
 
-  50% {
+  20% {
     opacity: 0;
     margin-left: 0;
     width:inherit;
@@ -481,14 +486,13 @@ color:transparent}
 .subtitle {
   width: 37ch;
   background: inherit;
-  animation: appear 10s, typing 9s steps(37) forwards, blink 0.4s step-end infinite alternate;
-  animation-delay: 0s, 10s, 10s; 
+  animation: appear 8s, typing 12s steps(37) forwards, blink 0.5s step-end infinite alternate;
+  animation-delay: 0s, 8s, 8s; 
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
   font-family: var(--font-primary);
   font-size: 20px;
-  animation-timing-function: ease-in, ease-out;
 }
 
 @keyframes appear {
@@ -505,7 +509,7 @@ color:transparent}
   from {
     width: 0;
   }
-}
+} 
 
 @keyframes blink {
   50% {
@@ -620,26 +624,6 @@ color:transparent}
 
 .swiper-pagination .swiper-pagination-bullet-active {
   background-color: rgba(var(--color-white-rgb), 1);
-}
-
-.more {
-  font-family: var(--font-secondary);
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 500;
-  position: relative;
-  display: inline-block;
-  padding-bottom: 5px;
-}
-
-.more:before {
-  content: "";
-  position: absolute;
-  height: 2px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: var(--color-black);
 }
 
 
