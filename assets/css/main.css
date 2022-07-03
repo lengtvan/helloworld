@@ -378,13 +378,20 @@ section {
 }
 
 .project-title span:nth-child(2) {
-  animation: showup 10s; 
+  animation: showup 10s, onoff 5s infinite;
+  animation-delay: 0s, 10s;
 }
 
 .project-title span:nth-child(3) {
   animation: slidein-right 10s;
 }
- 
+@keyframes onoff{
+  from{
+color:transparent}
+ to {
+  color:inherit;
+ }
+}
 /* @keyframes switch{
 0%{
   content:"Word ";
@@ -467,7 +474,6 @@ section {
 
 .subtitle-wrapper {
 
-  /*This part is important for centering*/
   display: grid;
   place-items: center;
 }
@@ -475,8 +481,8 @@ section {
 .subtitle {
   width: 37ch;
   background: inherit;
-  animation: appear 12s, typing 9s steps(37) forwards, blink 0.5s step-end infinite alternate;
-  animation-delay: 0s, 12s, 12s; 
+  animation: appear 10s, typing 9s steps(37) forwards, blink 0.4s step-end infinite alternate;
+  animation-delay: 0s, 10s, 10s; 
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
