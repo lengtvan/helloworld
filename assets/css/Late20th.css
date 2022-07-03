@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+:root {
+    scroll-behavior: smooth;
 
 body {
     background-color: #ffffff;
@@ -105,7 +111,5 @@ img {
 
   }
 
-  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 
