@@ -1,7 +1,12 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
 :root {
     scroll-behavior: smooth;
   }
-  
+
   body {
     color: rgba(var(--color-primary-rgb), 1);
     font-family: 'Space Grotesk', Helvetica, sans-serif;
@@ -574,7 +579,7 @@
     background: var(--color-black);
   }
   
-  .firstcharacter {
+  .firstletter {
     float: left;
     font-family: Helvetica, sans-serif;
     font-size: 40px;
@@ -769,7 +774,7 @@
      
   }
 
-  h1 {
+  .mrd-2 {
     font-size: 36;
     font-family: 'Space Grotesk', Helvetica, sans-serif;
     font-weight: 400;
@@ -780,10 +785,11 @@
       
   }
   
-  h2 {
+  .mrd-1 {
       font-size: 9;
       font-family: 'Space Grotesk', Helvetica, sans-serif;
       font-weight: 50;
+      text-transform: uppercase;
       color:#323339;
       text-align: left;
       
@@ -796,6 +802,7 @@
 .blockquote {
   font-size: 16pt;
   text-align: left;
+  color: #7665ad;
 
 }
 
@@ -803,5 +810,20 @@ img {
   max-width: 100%;
   filter: grayscale(100%);
   
+}
+
+/*--------------------------------------------------------------
+# Additional
+--------------------------------------------------------------*/
+
+.stylemenu {
+  background-color: #acb4ba;
+  color: #fff;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-left: 50px; 
+  padding-right: 50px; 
+  font-family: 'UnifrakturMaguntia', cursive;
+ 
 }
 

@@ -1,13 +1,15 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+
 :root {
   scroll-behavior: smooth;
 }
 
 body {
   color: black;
-  font-family: 'UnifrakturMaguntia';
+  font-family: 'UnifrakturMaguntia', cursive;
 }
 
 a {
@@ -16,13 +18,12 @@ a {
 }
 
 a:hover {
-  color: var(--color-links-hover);
+  color: #3d6167;
   text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'UnifrakturMaguntia';
-  color: black;
+  font-family: 'UnifrakturMaguntia', cursive;
 }
 
 #main {
@@ -279,7 +280,7 @@ section {
 {
 background-color:none;
 font-size: 20px;
-font-family:'UniFrakturMaguntia';
+font-family:'UniFrakturMaguntia', cursive;
 }
 
 .post-entry-1 {
@@ -308,7 +309,7 @@ font-family:'UniFrakturMaguntia';
   letter-spacing: 0.07rem;
   text-transform: uppercase;
   font-weight: 600;
-  font-family: 'UnifrakturMaguntia';
+  font-family: 'UnifrakturMaguntia', cursive;
   color: rgba(var(--color-black-rgb), 0.4);
   margin-bottom: 10px;
 }
@@ -331,7 +332,7 @@ font-family:'UniFrakturMaguntia';
   margin: 0;
   padding: 0;
   font-size: 15px;
-  font-family: 'UnifrakturMaguntia';
+  font-family: 'UnifrakturMaguntia', cursive;
 }
 
 .trending {
@@ -557,7 +558,7 @@ font-family:'UniFrakturMaguntia';
   line-height: 40px;
   text-align: center;
   border-radius: 50%;
-  font-family: 'UnifrakturMaguntia';
+  font-family: 'UnifrakturMaguntia', cursive;
   margin: 5px;
   transition: 0.3s all ease;
 }
@@ -582,15 +583,16 @@ font-family:'UniFrakturMaguntia';
 }
 
 /* custom tab nav on sidebar */
+
 .aside-block {
   margin-bottom: 30px;
+  font-style: 'UnifrakturMaguntia', cursive;
 }
 .aside-block .custom-tab-nav .nav-item {
   display: inline-block;
 }
 .aside-block .custom-tab-nav .nav-item button {
   color: var(--color-black);
-  text-transform: uppercase;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -598,6 +600,7 @@ font-family:'UniFrakturMaguntia';
   padding-left: 0;
   padding-right: 0;
   margin-right: 20px;
+  font-style: 'UnifrakturMaguntia', cursive;
 }
 .aside-block .custom-tab-nav .nav-item button.active {
   background-color: var(--color-black) !important;
@@ -656,6 +659,7 @@ font-family:'UniFrakturMaguntia';
   letter-spacing: 0.1rem;
   font-size: 14px;
   font-weight: 700;
+  font-family: 'UnifrakturMaguntia', cursive;
 }
 .nav-pills .nav-link.active{
   background-color: transparent !important;
@@ -668,7 +672,7 @@ font-family:'UniFrakturMaguntia';
 --------------------------------------------------------------*/
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1,618fr;
+  grid-template-columns: auto auto;
   grid-gap: 1em;
   padding: 0px;
  
@@ -730,19 +734,18 @@ body {
 
 }
 
-h1 {
+.mrd-2 {
   font-size: 60pt;
-  font-family: 'UnifrakturMaguntia';
+  font-family: 'UnifrakturMaguntia', cursive;
   font-weight: 200;
   color: black;
   text-align: center;
 
-    
-}
+}   
 
-h2 {
+.mrd-1 {
   font-size: 20pt;
-  font-family: 'UnifrakturMaguntia';
+  font-family: 'UnifrakturMaguntia', cursive;
   font-weight: 100;
   color: black;
   text-align: center;
@@ -759,6 +762,17 @@ padding-top: 1em;
 padding-bottom: 1,618em;
 
 }
+  
+  .firstletter {
+  float: left;
+  font-family: 'UnifrakturMaguntia';
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+  color: #3d6167;
+}
 
 
 img {
@@ -767,5 +781,18 @@ filter:grayscale(100%);
 opacity: 70%;
 }
 
+/*--------------------------------------------------------------
+# Additional
+--------------------------------------------------------------*/
 
+.stylemenu {
+  background-color: #e5d4a0;
+  color: #fff;
+  margin-top: 2em; 
+  margin-bottom: 3,236em;
+  padding-left: 50px; 
+  padding-right: 50px; 
+  font-family: 'UnifrakturMaguntia', cursive;
+ 
+}
 

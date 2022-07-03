@@ -1,3 +1,7 @@
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
 :root {
   scroll-behavior: smooth;
 
@@ -6,6 +10,7 @@
 
 body {
   color: rgba(var(--color-primary-rgb), 1);
+  background-color: #d1d4da;
 }
 
 a {
@@ -789,7 +794,7 @@ section {
 --------------------------------------------------------------*/
 .footer {
   overflow: hidden;
-  background: rgba(var(--color-black-rgb), 0.9);
+  background: #323339;
   font-size: 16px;
   color: rgba(var(--color-white-rgb), 0.7);
 }
@@ -904,5 +909,5 @@ section {
   padding-top: 50px;
   padding-left: 50px;
   padding-right: 50px;
-
 }
+  
