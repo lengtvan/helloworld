@@ -484,9 +484,9 @@ color:transparent}
 }
 
 .subtitle {
-  width: 37ch;
+  width: 29ch;
   background: inherit;
-  animation: appear 8s, typing 12s steps(37) forwards, blink 0.5s step-end infinite alternate;
+  animation: appear 8s, typing 10s steps(29) forwards, blink 0.5s step-end infinite alternate;
   animation-delay: 0s, 8s, 8s; 
   white-space: nowrap;
   overflow: hidden;
