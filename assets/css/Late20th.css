@@ -45,7 +45,9 @@ body {
   }
 
   .inside {
+    background-color: #ffffff;
     column-count: 2;
+     
   }
 /* Style that first letter! */
 
