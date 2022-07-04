@@ -103,7 +103,7 @@ font-family: 'Space Grotesk', sans-serif;
     height: 90px;
     transition: all 0.5s;
     z-index: 997;
-    background: #a6acb8;
+    background: #a6acb;
   }
   
 
@@ -172,6 +172,7 @@ font-family: 'Space Grotesk', sans-serif;
       white-space: nowrap;
       transition: 0.3s;
       font-family: 'Space Grotesk', sans-serif;
+      background-color: inherit;
 
       
     }
