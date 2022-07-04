@@ -103,7 +103,7 @@ font-family: 'Space Grotesk', sans-serif;
     height: 90px;
     transition: all 0.5s;
     z-index: 997;
-    background: #a6acb;
+    background: inherit;
   }
   
 
