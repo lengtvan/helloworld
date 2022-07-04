@@ -5,11 +5,21 @@
 
 :root {
   scroll-behavior: smooth;
+
 }
 
 body {
   color: black;
-  font-family: 'UnifrakturMaguntia', cursive;
+  font-family: 'UnifrakturMaguntia' !important;
+  background-color: #E6DFB8;
+  background-image: url(https://i1.wp.com/clonehouse.com/wp-content/uploads/2018/02/paperbg.jpg?fit=2000%2C1622&ssl=1);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-top: 50px; 
+  margin-bottom: 50px;
+  padding-top: 50px;
+  padding-left: 200px; 
+  padding-right: 200px; 
 }
 
 a {
@@ -22,619 +32,92 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'UnifrakturMaguntia', cursive;
-}
-
+/*
 #main {
   margin-top: 90px;
+} */
+
+.mrd-2 {
+  font-size: 60pt;
+  font-weight: 200;
+  color: black;
+  text-align: center;
+  font-family: 'UnifrakturMaguntia' !important;
+
+}   
+
+.mrd-1 {
+  font-size: 20pt;
+  font-weight: 100;
+  color: black;
+  text-align: center;
+  font-family: 'UnifrakturMaguntia' !important;
 }
+
+
+
+.blockquote {
+font-size: 16pt;
+text-align: justify;
+padding-top: 1em;
+padding-bottom: 1,618em;
+
+}
+  
+  .firstletter {
+  float: left;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+  color: #3d6167;
+}
+
+
+img {
+max-width: 100%;
+filter:grayscale(100%);
+opacity: 70%;
+float: none;
+}
+
 
 /*--------------------------------------------------------------
-# Sections & Section Header
+# Stylemenu
 --------------------------------------------------------------*/
-section {
-  padding: 40px 0;
-  overflow: hidden;
+
+nav.stylemenu {
+  background-color: transparent;
+  margin-top: 2em; 
+  margin-bottom: 3em;
+  padding-left: 50px; 
+  padding-right: 50px;
 }
 
-.section-header {
-  border-bottom: 2px solid black;
-}
-.section-header h2 {
-  font-size: 50px;
-  color: var(--color-black);
-}
-.section-header p {
-  margin-bottom: 0;
+.stylemenu h4 {
+
+font-family: 'UnifrakturMaguntia' !important;
+font-size: larger;
+color: #3d6167;
+text-align: center;
+
 }
 
+a.logo {
+text-decoration: underline #3d6167;
+}
 
 
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-.header {
+ #header {
   height: 90px;
   transition: all 0.5s;
   z-index: 997;
-  background: #e5d4a0;
+  background: #e9d2b3;
 }
-.header.sticked {
-  height: 70px;
-}
-.header .logo img {
-  max-height: 40px;
-  margin-right: 6px;
-}
-.header .logo h1 {
-  font-size: 30px;
-  font-weight: 700;
-  color: black;
-  font-family: 'UnifrakturMaguntia';
-}
-
-
-section {
-  scroll-margin-top: 70px;
-}
-
-/*--------------------------------------------------------------
-# Desktop Navigation 
---------------------------------------------------------------*/
-@media (min-width: 1280px) {
-  .navbar {
-    padding: 0;
-  }
-  .navbar ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    list-style: none;
-    align-items: center;
-  }
-  .navbar li {
-    position: relative;
-  }
-  .navbar a, .navbar a:focus {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 0 10px 30px;
-    font-family: 'UnifrakturMaguntia';
-    font-size: 16px;
-    font-weight: 500;
-    color: rgba(var(--color-default-rgb), 1);
-    white-space: nowrap;
-    transition: 0.3s;
-  }
-  .navbar a i, .navbar a:focus i {
-    font-size: 12px;
-    line-height: 0;
-    margin-left: 5px;
-  }
-  .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-    color: var(--color-default);
-  }
-  .navbar .getstarted, .navbar .getstarted:focus {
-    background: var(--color-primary);
-    padding: 8px 20px;
-    margin-left: 30px;
-    border-radius: 4px;
-    color: var(--color-white);
-  }
-  .navbar .getstarted:hover, .navbar .getstarted:focus:hover {
-    color: var(--color-white);
-    background: rgba(var(--color-primary-rgb), 0.8);
-  }
-  .navbar .dropdown ul {
-    display: block;
-    position: absolute;
-    left: 14px;
-    top: calc(100% + 30px);
-    margin: 0;
-    padding: 10px 0;
-    z-index: 99;
-    opacity: 0;
-    visibility: hidden;
-    background: var(--color-white);
-    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-    transition: 0.3s;
-    border-radius: 4px;
-  }
-  .navbar .dropdown ul li {
-    min-width: 200px;
-  }
-  .navbar .dropdown ul a {
-    padding: 10px 20px;
-    font-size: 15px;
-    text-transform: none;
-    font-weight: 400;
-  }
-  .navbar .dropdown ul a i {
-    font-size: 12px;
-  }
-  .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-    color: var(--color-primary);
-  }
-  .navbar .dropdown:hover > ul {
-    opacity: 1;
-    top: 100%;
-    visibility: visible;
-  }
-  .navbar .dropdown .dropdown ul {
-    top: 0;
-    left: calc(100% - 30px);
-    visibility: hidden;
-  }
-  .navbar .dropdown .dropdown:hover > ul {
-    opacity: 1;
-    top: 0;
-    left: 100%;
-    visibility: visible;
-  }
-}
-@media (min-width: 1280px) and (max-width: 1366px) {
-  .navbar .dropdown .dropdown ul {
-    left: -90%;
-  }
-  .navbar .dropdown .dropdown:hover > ul {
-    left: -100%;
-  }
-}
-.mobile-nav-toggle {
-  display: none;
-}
-
-/*--------------------------------------------------------------
-# Mobile Navigation
---------------------------------------------------------------*/
-@media (max-width: 1279px) {
-  .navbar {
-    padding: 0;
-    z-index: 9997;
-  }
-  .navbar ul {
-    display: none;
-    position: absolute;
-    inset: 55px 15px 15px 15px;
-    padding: 10px 0;
-    margin: 0;
-    border-radius: 10px;
-    background-color: var(--color-white);
-    overflow-y: auto;
-    transition: 0.3s;
-    z-index: 9998;
-  }
-  .navbar a, .navbar a:focus {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    font-family: 'UnifrakturMaguntia';
-    font-size: 15px;
-    font-weight: 600;
-    color: var(--color-primary);
-    white-space: nowrap;
-    transition: 0.3s;
-  }
-  .navbar a i, .navbar a:focus i {
-    font-size: 12px;
-    line-height: 0;
-    margin-left: 5px;
-  }
-  .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-    color: var(--color-primary);
-  }
-  .navbar .dropdown ul, .navbar .dropdown .dropdown ul {
-    position: static;
-    display: none;
-    z-index: 99;
-    padding: 10px 0;
-    margin: 10px 20px;
-    background: var(--color-white);
-    transition: all 0.5s ease-in-out;
-    box-shadow: 0px 0px 30px rgba(var(--color-black-rgb), 0.1);
-  }
-  .navbar .dropdown > .dropdown-active, .navbar .dropdown .dropdown > .dropdown-active {
-    display: block;
-  }
-
-  .mobile-nav-toggle {
-    display: inline-block;
-    color: var(--color-secondary);
-    font-size: 28px;
-    cursor: pointer;
-    line-height: 0;
-    transition: 0.5s;
-  }
-  .mobile-nav-toggle.bi-x {
-    color: var(--color-black);
-  }
-
-  .mobile-nav-active {
-    overflow: hidden;
-  }
-  .mobile-nav-active .mobile-nav-toggle {
-    position: fixed;
-    top: 15px;
-    right: 15px;
-    z-index: 9999;
-    color: var(--color-white);
-  }
-  .mobile-nav-active .navbar {
-    position: fixed;
-    overflow: hidden;
-    inset: 0;
-    background: rgba(var(--color-black-rgb), 0.6);
-    transition: 0.3s;
-  }
-  .mobile-nav-active .navbar > ul {
-    display: block;
-  }
-}
-/*--------------------------------------------------------------
-# Posts
---------------------------------------------------------------*/
-.grid-container
-{
-background-color:none;
-font-size: 20px;
-font-family:'UniFrakturMaguntia', cursive;
-}
-
-.post-entry-1 {
-  margin-bottom: 30px;
-}
-.post-entry-1 img {
-  margin-bottom: 30px;
-}
-.post-entry-1 h2 {
-  margin-bottom: 20px;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 1.2;
-  font-weight: 500;
-}
-.post-entry-1 h2 a {
-  color: var(--color-black);
-}
-.post-entry-1.lg h2 {
-  font-size: 40px;
-  line-height: 1;
-}
-
-.post-meta {
-  font-size: 11px;
-  letter-spacing: 0.07rem;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-family: 'UnifrakturMaguntia', cursive;
-  color: rgba(var(--color-black-rgb), 0.4);
-  margin-bottom: 10px;
-}
-
-@media (max-width: 768px) {
-  .custom-border {
-    border: none !important;
-  }
-}
-
-.author .photo {
-  margin-right: 10px;
-}
-.author .photo img {
-  width: 40px;
-  border-radius: 50%;
-  margin-bottom: 0;
-}
-.author .name h3 {
-  margin: 0;
-  padding: 0;
-  font-size: 15px;
-  font-family: 'UnifrakturMaguntia', cursive;
-}
-
-.trending {
-  border: 1px solid rgba(var(--color-black-rgb), 0.1);
-}
-.trending > h3 {
-  color: var(--color-black);
-  padding: 20px;
-  border-bottom: 1px solid rgba(var(--color-black-rgb), 0.1);
-}
-.trending .trending-post {
-  padding: 0;
-  margin: 0;
-}
-.trending .trending-post li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: block;
-}
-.trending .trending-post li a {
-  display: block;
-  padding: 20px;
-  border-bottom: 1px solid rgba(var(--color-black-rgb), 0.1);
-  position: relative;
-  overflow: hidden;
-}
-.trending .trending-post li a .number {
-  position: absolute;
-  z-index: -1;
-  font-size: 5rem;
-  left: -10px;
-  top: -20px;
-  font-weight: 700;
-  color: rgba(var(--color-black-rgb), 0.05);
-}
-.trending .trending-post li a h3 {
-  font-size: 18px;
-  color: rgba(var(--color-black-rgb), 0.9);
-}
-.trending .trending-post li a .author {
-  color: rgba(var(--color-black-rgb), 0.7);
-  font-weight: 500;
-}
-.trending .trending-post li a:hover h3 {
-  color: rgba(var(--color-black-rgb), 1);
-}
-.trending .trending-post li:last-child a {
-  border-bottom: none;
-}
-
-.post-entry-2 {
-  margin-bottom: 30px;
-}
-.post-entry-2 .post-meta {
-  font-size: 11px;
-  letter-spacing: 0.07rem;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-family: 'UnifrakturMaguntia';
-  color: rgba(var(--color-black-rgb), 0.4);
-  margin-bottom: 10px;
-}
-.post-entry-2 .author {
-  color: rgba(var(--color-black-rgb), 0.7);
-  font-weight: 500;
-  margin-bottom: 20px;
-  display: block;
-}
-.post-entry-2 .thumbnail {
-  flex: 0 0 65%;
-}
-@media (max-width: 960px) {
-  .post-entry-2 .thumbnail {
-    flex: 0 0 100%;
-    margin-bottom: 20px;
-  }
-}
-.post-entry-2.half .thumbnail {
-  flex: 0 0 50%;
-}
-@media (max-width: 768px) {
-  .post-entry-2.half .thumbnail {
-    flex: 0 0 100%;
-    margin-bottom: 20px;
-  }
-}
-.post-entry-2.small-img .thumbnail {
-  flex: 0 0 30%;
-}
-@media (max-width: 768px) {
-  .post-entry-2.small-img .thumbnail {
-    flex: 0 0 100%;
-    margin-bottom: 20px;
-  }
-}
-
-.img-bg {
-  height: 500px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  background-position: center center;
-}
-@media (max-width: 768px) {
-  .img-bg {
-    height: 400px;
-  }
-}
-.img-bg:before {
-  position: absolute;
-  content: "";
-  background: black;
-  background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0) 100%);
-  opacity: 0.5;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  top: 0;
-}
-.img-bg .img-bg-inner {
-  position: relative;
-  z-index: 2;
-  max-width: 700px;
-  position: relative;
-  padding-left: 100px;
-  padding-right: 100px;
-  margin-bottom: 50px;
-}
-@media (max-width: 768px) {
-  .img-bg .img-bg-inner {
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-bottom: 50px;
-  }
-}
-.img-bg .img-bg-inner h2, .img-bg .img-bg-inner p {
-  color: var(--color-white);
-}
-@media (max-width: 500px) {
-  .img-bg .img-bg-inner p {
-    display: none;
-  }
-}
-
-.custom-swiper-button-next,
-.custom-swiper-button-prev {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 9;
-}
-@media (max-width: 768px) {
-  .custom-swiper-button-next,
-.custom-swiper-button-prev {
-    display: none;
-  }
-}
-.custom-swiper-button-next span,
-.custom-swiper-button-prev span {
-  font-size: 20px;
-  color: rgba(var(--color-white-rgb), 0.7);
-  transition: 0.3s all ease;
-}
-.custom-swiper-button-next:hover span, .custom-swiper-button-next:focus span,
-.custom-swiper-button-prev:hover span,
-.custom-swiper-button-prev:focus span {
-  color: rgba(var(--color-white-rgb), 1);
-}
-
-.custom-swiper-button-next {
-  right: 40px;
-}
-
-.custom-swiper-button-prev {
-  left: 40px;
-}
-
-.swiper-pagination .swiper-pagination-bullet {
-  background-color: rgba(var(--color-white-rgb), 0.8);
-}
-.swiper-pagination .swiper-pagination-bullet-active {
-  background-color: rgba(var(--color-white-rgb), 1);
-}
-
-.more {
-  font-family: 'UnifrakturMaguntia';
-  font-size: 12px;
-  font-weight: 500;
-  position: relative;
-  display: inline-block;
-  padding-bottom: 5px;
-}
-.more:before {
-  content: "";
-  position: absolute;
-  height: 2px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: var(--color-black);
-}
-
-
-.aside-title, .category-title {
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  font-size: 14px;
-  font-weight: 700;
-  margin-bottom: 30px;
-  border-bottom: 2px solid var(--color-black);
-}
-
-.category-title {
-  border-bottom: none;
-}
-
-
-/* custom tab nav on sidebar */
-
-.aside-block {
-  margin-bottom: 30px;
-  font-style: 'UnifrakturMaguntia', cursive;
-}
-.aside-block .custom-tab-nav .nav-item {
-  display: inline-block;
-}
-.aside-block .custom-tab-nav .nav-item button {
-  color: var(--color-black);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  border-radius: 0;
-  padding-left: 0;
-  padding-right: 0;
-  margin-right: 20px;
-  font-style: 'UnifrakturMaguntia', cursive;
-}
-.aside-block .custom-tab-nav .nav-item button.active {
-  background-color: var(--color-black) !important;
-  background-color: transparent !important;
-  color: var(--color-black);
-}
-
-.link-video {
-  position: relative;
-}
-.link-video span {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  border-radius: 50%;
-  text-align: center;
-  display: inline-block;
-  background-color: rgba(var(--color-black-rgb), 0.2);
-  color: var(--color-white);
-}
-
-.aside-links li {
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid rgba(var(--color-black-rgb), 0.1);
-}
-.aside-links li a {
-  display: block;
-  color: rgba(var(--color-black-rgb), 0.7);
-}
-.aside-links li a:hover, .aside-links li a:focus {
-  color: rgba(var(--color-black-rgb), 1);
-}
-
-.aside-tags li {
-  display: inline-block;
-}
-.aside-tags li a {
-  display: inline-block;
-  color: rgba(var(--color-black-rgb), 0.7);
-  padding: 7px 10px;
-  border: 1px solid rgba(var(--color-black-rgb), 0.1);
-  margin-bottom: 3px;
-  transition: 0.3s all ease;
-}
-.aside-tags li a:hover, .aside-tags li a:focus {
-  color: rgba(var(--color-black-rgb), 1);
-  border: 1px solid rgba(var(--color-black-rgb), 0.5);
-}
-
-.aside-block .custom-tab-nav .nav-item .nav-link .aside-title{
-  letter-spacing: 0.1rem;
-  font-size: 14px;
-  font-weight: 700;
-  font-family: 'UnifrakturMaguntia', cursive;
-}
-.nav-pills .nav-link.active{
-  background-color: transparent !important;
-}
-
 
 
 /*--------------------------------------------------------------
@@ -659,7 +142,9 @@ font-family:'UniFrakturMaguntia', cursive;
 
 .item1 {
   column-count: 2;
+  column-gap: 3em;
   grid-row: 2;
+  border-bottom: solid 1px #E6DFB8;
 }
 
 .item2 {
@@ -669,100 +154,93 @@ font-family:'UniFrakturMaguntia', cursive;
 
 .item3 {
   column-count: 2;
+  column-gap: 3em;
   grid-row: 3;
+  border-bottom: solid 1px #E6DFB8;
 }
 
 .item4 {
   column-count: 2;
+  column-gap: 3em;
   grid-row: 4;
+  border-bottom: solid 1px #E6DFB8;
 }
 
 .item5 {
   column-count: 2;
+  column-gap: 3em;
   grid-row: 5;
+  border-bottom: solid 1px #E6DFB8;
 }
 
 
 .item6 {
   column-count: 2;
+  column-gap: 3em;
   grid-row: 6;
   
 }
 
 
-
-body {
-  background-color: #E6DFB8;
-  background-image: url(https://i1.wp.com/clonehouse.com/wp-content/uploads/2018/02/paperbg.jpg?fit=2000%2C1622&ssl=1);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  margin-top: 50px; 
-  margin-bottom: 50px;
-  padding-top: 50px;
-  padding-left: 200px; 
-  padding-right: 200px; 
-
-}
-
-.mrd-2 {
-  font-size: 60pt;
-  font-family: 'UnifrakturMaguntia', cursive;
-  font-weight: 200;
-  color: black;
-  text-align: center;
-
-}   
-
-.mrd-1 {
-  font-size: 20pt;
-  font-family: 'UnifrakturMaguntia', cursive;
-  font-weight: 100;
-  color: black;
-  text-align: center;
-
-    
-}
-
-
-
-.blockquote {
-font-size: 16pt;
-text-align: justify;
-padding-top: 1em;
-padding-bottom: 1,618em;
-
-}
+/*--------------------------------------------------------------
+# Desktop Navigation 
+--------------------------------------------------------------*/
   
-  .firstletter {
-  float: left;
-  font-family: 'UnifrakturMaguntia';
-  font-size: 75px;
-  line-height: 60px;
-  padding-top: 4px;
-  padding-right: 8px;
-  padding-left: 3px;
-  color: #3d6167;
-}
-
-
-img {
-max-width: 100%;
-filter:grayscale(100%);
-opacity: 70%;
-}
+  .navbar a, .navbar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'UnifrakturMaguntia' !important;
+    color: black;
+    white-space: nowrap;
+    transition: 0.3s;
+  }
 
 /*--------------------------------------------------------------
-# Additional
+# Custom Nav Tab on Sidebar
 --------------------------------------------------------------*/
-
-.stylemenu {
-  background-color: #e5d4a0;
-  color: #fff;
-  margin-top: 2em; 
-  margin-bottom: 3,236em;
-  padding-left: 50px; 
-  padding-right: 50px; 
-  font-family: 'UnifrakturMaguntia', cursive;
- 
+.aside-block {
+  margin-bottom: 30px;
 }
+.aside-block .custom-tab-nav .nav-item {
+  display: inline-block;
+}
+.aside-block .custom-tab-nav .nav-item button {
+  color: var(--color-black);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 20px;
+}
+.aside-block .custom-tab-nav .nav-item button.active {
+  background-color: var(--color-black) !important;
+  background-color: transparent !important;
+  color: var(--color-black);
+}
+
+
+.aside-block-container .custom-tab-nav .nav-item .nav-link .aside-title{
+  letter-spacing: 0.1rem;
+  font-size: 14pt !important;
+  font-family: 'UnifrakturMaguntia';
+  text-transform: none !important;
+  
+}
+
+h3.aside-title{
+  letter-spacing: 0.1rem;
+  font-size: 14pt !important;
+  font-family: 'UnifrakturMaguntia';
+  text-transform: none !important;
+  
+}
+
+
+
 

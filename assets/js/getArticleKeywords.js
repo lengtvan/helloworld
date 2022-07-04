@@ -200,4 +200,55 @@ if (document.URL.includes("article1")) {
     "load",
     appendFrequency("article3", "concept", referenceConcept)
   );
+} else if (document.URL.includes("article4")) {
+  window.addEventListener(
+    "load",
+    appendFrequency("article4", "person", referencePerson)
+  );
+  window.addEventListener(
+    "load",
+    appendFrequency("article4", "publication", referencePublication)
+  );
+  window.addEventListener(
+    "load",
+    appendFrequency("article4", "place", referencePlace)
+  );
+  window.addEventListener(
+    "load",
+    appendFrequency("article4", "concept", referenceConcept)
+  );
+} else if (document.URL.includes("article5")) {
+  window.addEventListener(
+    "load",
+    appendFrequency("article5", "person", referencePerson)
+  );
+  window.addEventListener(
+    "load",
+    appendFrequency("article5", "publication", referencePublication)
+  );
+  window.addEventListener(
+    "load",
+    appendFrequency("article5", "place", referencePlace)
+  );
+  window.addEventListener(
+    "load",
+    appendFrequency("article5", "concept", referenceConcept)
+  );
+} else if (document.URL.includes("article6")) {
+  window.addEventListener(
+    "load",
+    appendFrequency("article6", "person", referencePerson)
+  );
+  window.addEventListener(
+    "load",
+    appendFrequency("article6", "publication", referencePublication)
+  );
+  window.addEventListener(
+    "load",
+    appendFrequency("article6", "place", referencePlace)
+  );
+  window.addEventListener(
+    "load",
+    appendFrequency("article6", "concept", referenceConcept)
+  );
 }
