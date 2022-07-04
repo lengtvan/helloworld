@@ -343,7 +343,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Project Title
+# Project Title - Subtitle: Animation
 --------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
 
@@ -372,7 +372,7 @@ section {
 
 .project-title span:nth-child(2) {
   animation: showup 10s, onoff 10s infinite;
-  animation-delay: 0s, 9.5s;
+  animation-delay: 0s, 9.75s;
   animation-timing-function: ease-in, ease-out;
 }
 
@@ -396,11 +396,10 @@ color:transparent}
     opacity: 0;
     width:0;
     transform: translateX(-50%);
-    color:#7665ad;
 
   }
 
-  20% {
+  40% {
     opacity: 0;
     transform: translateX(0);
     width:inherit;
@@ -602,21 +601,11 @@ color:transparent}
 }
 
 
-.aside-title,
-.category-title {
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  font-size: 14px;
-  font-weight: 700;
-  border-bottom: 2px solid var(--color-black);
-}
-
-.category-title {
-  border-bottom: none;
-}
 
 
-/* custom tab nav on sidebar */
+/*--------------------------------------------------------------
+# Article Content
+--------------------------------------------------------------*/
 .single-post-content .container .row .single-post {
   max-width: 70% !important;
   position: relative;
@@ -642,7 +631,21 @@ color:transparent}
 }
 
 
+/*--------------------------------------------------------------
+# Aside bar
+--------------------------------------------------------------*/
+.aside-title,
+.category-title {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 14px;
+  font-weight: 700;
+  border-bottom: 2px solid var(--color-black);
+}
 
+.category-title {
+  border-bottom: none;
+}
 .aside-block .custom-tab-nav .nav-item {
   display: inline-block;
   margin-right: 4%;
