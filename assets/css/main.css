@@ -838,4 +838,9 @@ color:transparent}
   padding-left: 50px;
   padding-right: 50px;
 }
+
+.palette {
+  border: 2px solid white;
+  height: 3.125em;
   
+}  
