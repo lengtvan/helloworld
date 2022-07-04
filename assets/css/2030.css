@@ -614,7 +614,7 @@ font-family:'Exo', sans-serif;
   
   
   /*--------------------------------------------------------------
-  # Additional
+  # Style Menu
   --------------------------------------------------------------*/
   
   .stylemenu {
@@ -626,5 +626,13 @@ font-family:'Exo', sans-serif;
     padding-left: 50px; 
     padding-right: 50px; 
    
+  }
+  .stylemenu a span:hover{
+    border:goldenrod 0.125em solid;
+    padding: 0.25em 1em;
+    border-radius:0.25em;
+    text-shadow:0 0 0.125em hsl(0 0 100/0.2),0 0 0.125em currentColor;
+    box-shadow:0 0 .5em goldenrod;
+
   }
   

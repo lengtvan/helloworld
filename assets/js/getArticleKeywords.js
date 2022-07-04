@@ -93,7 +93,6 @@ const referencePublication = document.getElementById("publication-keywords")
 const referencePlace = document.getElementById("place-keywords").childNodes[1];
 const referenceConcept =
   document.getElementById("concept-keywords").childNodes[1];
-let prevItem;
 
 function appendFrequency(articleId, category, parentNode) {
   getKeyWords(articleId);
@@ -102,7 +101,8 @@ function appendFrequency(articleId, category, parentNode) {
   //append frequency to person keywords, set click events to link to keywords in article
   let dict = keywords[category];
   let item;
-
+  let prevKey;
+  let prevItem;
   Object.keys(dict).map(function (key, index) {
     var node = document.createElement("li");
     var childNode = document.createElement("a");
@@ -110,17 +110,15 @@ function appendFrequency(articleId, category, parentNode) {
     childNode.appendChild(childNodeText);
     node.appendChild(childNode);
     let i = 1;
+
     node.addEventListener("click", () => {
       console.log("prevItem", prevItem);
       if (prevItem) {
         prevItem.style.backgroundColor = "";
       }
-
-      if (i > dict[key]) {
-        alert("No further reference of this can be found.");
-        prevItem.style.backgroundColor = "";
+      if (prevKey !== key) {
+        console.log("start again");
         i = 1;
-      } else {
         item = document.getElementById(`${key}-mention-${i}`);
         console.log(item);
         item.style.backgroundColor = "#FDFF47";
@@ -129,6 +127,23 @@ function appendFrequency(articleId, category, parentNode) {
 
         i++;
         prevItem = item;
+        prevKey = key;
+      } else if (i > dict[key]) {
+        console.log("i", i);
+        alert("No further reference of this can be found.");
+        prevItem.style.backgroundColor = "";
+        i = 1;
+      } else {
+        console.log("find, find more");
+        item = document.getElementById(`${key}-mention-${i}`);
+        console.log(item);
+        item.style.backgroundColor = "#FDFF47";
+        item.style.scrollMarginTop = "30px";
+        item.scrollIntoView(true, { block: "start", inline: "start" });
+
+        i++;
+        prevItem = item;
+        prevKey = key;
       }
     });
     parentNode.appendChild(node);
