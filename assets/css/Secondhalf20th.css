@@ -76,6 +76,24 @@ filter: grayscale(100%);
 
 }
 
+div.custom-t1 {
+
+  display: inline-block;
+}
+div.p2{
+
+  display: inline-block;
+}
+
+ div.p3{
+
+  display: inline-block;
+}
+
+div.custom-t4 {
+
+  display: inline-block;
+}
 /*--------------------------------------------------------------
 # Stylemenu
 --------------------------------------------------------------*/
