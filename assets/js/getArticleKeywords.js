@@ -93,6 +93,7 @@ const referencePublication = document.getElementById("publication-keywords")
 const referencePlace = document.getElementById("place-keywords").childNodes[1];
 const referenceConcept =
   document.getElementById("concept-keywords").childNodes[1];
+let prevItem;
 
 function appendFrequency(articleId, category, parentNode) {
   getKeyWords(articleId);
@@ -102,7 +103,6 @@ function appendFrequency(articleId, category, parentNode) {
   let dict = keywords[category];
   let item;
   let prevKey;
-  let prevItem;
   Object.keys(dict).map(function (key, index) {
     var node = document.createElement("li");
     var childNode = document.createElement("a");
@@ -121,8 +121,8 @@ function appendFrequency(articleId, category, parentNode) {
         item = document.getElementById(`${key}-mention-${i}`);
         console.log(item);
         item.style.backgroundColor = "#FDFF47";
-        item.style.scrollMarginTop = "90px";
-        item.scrollIntoView(true, { block: "start", inline: "start" });
+        item.style.scrollMarginTop = "120px";
+        item.scrollIntoView(true, { block: "nearest", inline: "start" });
 
         i++;
         prevItem = item;

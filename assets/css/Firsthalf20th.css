@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200&display=swap');
 :root {
     scroll-behavior: smooth;
 
@@ -23,9 +24,12 @@
     text-decoration: none;
   }
   
-  h1, h2, h3, h4, h5, h6 {
+  h1, h3, h4, h5, h6 {
     font-family: 'Limelight', cursive !important;
     color:whitesmoke;
+  }
+  h2{
+    font-family: 'Josefin Sans', sans-serif !important;
   }
   .grid-container .grid-item.item2{
     padding: 20px;
@@ -343,6 +347,7 @@ font-family:'Poiret One', cursive;
   .aside-links li {
     margin-bottom: 10px;
     padding-bottom: 10px;
+    font-family: 'Poiret One', cursive;
     /* border-bottom: 1px solid rgba(var(--color-black-rgb), 0.1); */
   }
   .aside-links li a {

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
 :root {
     scroll-behavior: smooth;
    
@@ -43,12 +44,12 @@ color: goldenrod;
 font-size: 20px;
 font-family:'Exo', sans-serif;
 }
-  h1, h2, h3, h4, h5, h6 {
+  h1, h3, h4, h5, h6 {
     font-family: 'Orbitron', sans-serif !important;
     ;
   }
   h2{
-    font-weight: 100;
+    font-family: 'Rajdhani', sans-serif !important;
   }
   .aside-block {
     background-color:rgba(var(--color-black-rgb), 0.5) ;
