@@ -10,6 +10,7 @@
     background-image:url(https://images.unsplash.com/photo-1612487528505-d2338264c821?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
     background-size: cover; 
     font-family: 'Limelight',cursive;
+    
   }
   
   a {
@@ -425,7 +426,6 @@ font-family:'Poiret One', cursive;
     background-color: inherit;
     color: #fff;
     margin-top: 60px; 
-    margin-bottom: 50px;
     padding-top: 50px;
     padding-left: 50px; 
     padding-right: 50px; 
