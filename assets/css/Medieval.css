@@ -32,11 +32,6 @@ a:hover {
   text-decoration: none;
 }
 
-/*
-#main {
-  margin-top: 90px;
-} */
-
 .mrd-2 {
   font-size: 60pt;
   font-weight: 200;
@@ -80,6 +75,25 @@ max-width: 100%;
 filter:grayscale(100%);
 opacity: 70%;
 float: none;
+}
+
+div.custom-t1 {
+
+  display: inline-block;
+}
+div.p2{
+
+  display: inline-block;
+}
+
+ div.p3{
+
+  display: inline-block;
+}
+
+div.custom-t4 {
+
+  display: inline-block;
 }
 
 
