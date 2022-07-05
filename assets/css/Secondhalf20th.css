@@ -85,13 +85,13 @@ background-color: #acb4ba;
 margin-bottom: 50px;
 padding-left: 50px; 
 padding-right: 50px; 
-font-family: 'Space Grotesk', sans-serif;
+font-family: 'Space Grotesk', Helvetica, sans-serif;
 
 }
 
 .stylemenu h4 {
 
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Space Grotesk', Helvetica, sans-serif;
   font-size: larger;
   text-align: center;
 }
@@ -171,7 +171,7 @@ font-family: 'Space Grotesk', sans-serif;
       font-weight: 500;
       white-space: nowrap;
       transition: 0.3s;
-      font-family: 'Space Grotesk', sans-serif;
+      font-family: 'Space Grotesk', Helvetica, sans-serif !important;
       background-color: inherit;
 
       
@@ -190,7 +190,7 @@ font-family: 'Space Grotesk', sans-serif;
   }
   .aside-block .custom-tab-nav .nav-item button {
     color: var(--color-black);
-    font-size: 12px;
+    font-size: 10pt;
     font-weight: 700;
     letter-spacing: 2px;
     border-radius: 0;
@@ -208,7 +208,7 @@ font-family: 'Space Grotesk', sans-serif;
 
 .aside-block-container .custom-tab-nav .nav-item .nav-link .aside-title{
   letter-spacing: 0.1rem;
-  font-size: 14pt !important;
+  font-size: 12pt !important;
   font-family: 'Space Grotesk', sans-serif;
  
   
@@ -216,7 +216,7 @@ font-family: 'Space Grotesk', sans-serif;
 
 h3.aside-title{
   letter-spacing: 0.1rem;
-  font-size: 14pt !important;
+  font-size: 12pt !important;
   font-family: 'Space Grotesk', sans-serif;
   
   
