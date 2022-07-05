@@ -117,7 +117,6 @@ function appendFrequency(articleId, category, parentNode) {
         prevItem.style.backgroundColor = "";
       }
       if (prevKey !== key) {
-        console.log("start again");
         i = 1;
         item = document.getElementById(`${key}-mention-${i}`);
         console.log(item);
@@ -129,12 +128,10 @@ function appendFrequency(articleId, category, parentNode) {
         prevItem = item;
         prevKey = key;
       } else if (i > dict[key]) {
-        console.log("i", i);
         alert("No further reference of this can be found.");
         prevItem.style.backgroundColor = "";
         i = 1;
       } else {
-        console.log("find, find more");
         item = document.getElementById(`${key}-mention-${i}`);
         console.log(item);
         item.style.backgroundColor = "#FDFF47";
