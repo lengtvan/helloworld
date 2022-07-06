@@ -216,32 +216,9 @@ text-decoration: underline #3d6167;
 /*--------------------------------------------------------------
 # Custom Nav Tab on Sidebar
 --------------------------------------------------------------*/
-.aside-block {
-  margin-bottom: 30px;
-}
-.aside-block .custom-tab-nav .nav-item {
-  display: inline-block;
-}
-.aside-block .custom-tab-nav .nav-item button {
-  color: var(--color-black);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  border-radius: 0;
-  padding-left: 0;
-  padding-right: 0;
-  margin-right: 20px;
-}
-.aside-block .custom-tab-nav .nav-item button.active {
-  background-color: var(--color-black) !important;
-  background-color: transparent !important;
-  color: var(--color-black);
-}
-
-
 .aside-block-container .custom-tab-nav .nav-item .nav-link .aside-title{
   letter-spacing: 0.1rem;
-  font-size: 14pt !important;
+  font-size: 12pt !important;
   font-family: 'UnifrakturMaguntia';
   text-transform: none !important;
   
@@ -254,6 +231,10 @@ h3.aside-title{
   text-transform: none !important;
   
 }
+
+.aside-block-keywords {
+  text-align: justify;
+} 
 
 
 /*--------------------------------------------------------------
