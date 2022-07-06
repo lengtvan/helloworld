@@ -326,7 +326,7 @@ section {
 --------------------------------------------------------------*/
 #index-content-container {
   display: flex;
-  padding: 10px;
+  padding: 1%;
   margin-right: 20px;
 }
 
@@ -347,7 +347,7 @@ section {
   color: #555;
   font-family: var(--font-primary);
   font-weight: 300;
-  font-size: 40px;
+  font-size: 2.5rem;
   overflow: hidden;
   width: 40vw;
   backface-visibility: hidden;
@@ -456,9 +456,9 @@ color:transparent}
   animation-delay: 0s, 8s, 8s; 
   white-space: nowrap;
   overflow: hidden;
-  border-right: 2px solid;
+  border-right: 0.125em solid;
   font-family: var(--font-primary);
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 @keyframes appear {

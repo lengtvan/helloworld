@@ -276,12 +276,14 @@
 {
 background-color:rgba(var(--color-black-rgb), 1);
 color: goldenrod;
-font-size: 20px;
+font-size: 1.25rem;
 font-family:'Poiret One', cursive;
 
 }
 
-
+.grid-container .grid-item{
+  padding:0 1rem !important; 
+}
   /* custom tab nav on sidebar */
   .single-post-content .container .row .single-post{
     max-width:70% !important;
