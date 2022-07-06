@@ -28,8 +28,16 @@
     font-family: 'Limelight', cursive !important;
     color:whitesmoke;
   }
-  h2{
+  h2,blockquote{
     font-family: 'Josefin Sans', sans-serif !important;
+  }
+  blockquote{
+    border-top: 0.125em solid rgba(218,165,32,0.4);
+    border-bottom: 0.125em solid rgba(218,165,32,0.4);
+    border-radius:0.125em ;
+    padding:1em;
+    margin:1em 0 !important;
+
   }
   .grid-container .grid-item.item2{
     padding: 20px;
@@ -282,7 +290,7 @@ font-family:'Poiret One', cursive;
 }
 
 .grid-container .grid-item{
-  padding:0 1rem !important; 
+  padding:1rem 1rem !important; 
 }
   /* custom tab nav on sidebar */
   .single-post-content .container .row .single-post{

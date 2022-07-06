@@ -41,7 +41,7 @@
 {
 background-color:rgba(var(--color-black-rgb), 0.5);
 color: goldenrod;
-font-size: 20px;
+font-size: 1.25rem;
 font-family:'Exo', sans-serif;
 }
 .grid-container .grid-item{
@@ -52,7 +52,7 @@ font-family:'Exo', sans-serif;
     font-family: 'Orbitron', sans-serif !important;
     ;
   }
-  h2{
+  h2,blockquote{
     font-family: 'Rajdhani', sans-serif !important;
   }
   .aside-block {
