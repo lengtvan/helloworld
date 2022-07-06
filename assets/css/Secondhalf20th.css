@@ -199,12 +199,7 @@ font-family: 'Space Grotesk', Helvetica, sans-serif;
 # Custom Nav Tab on Sidebar
 --------------------------------------------------------------*/
   
-.aside-block {
-    margin-bottom: 30px;
-  }
 
-  .aside-block .custom-tab-nav .nav-item {
-    display: inline-block;
   }
   .aside-block .custom-tab-nav .nav-item button {
     color: var(--color-black);
